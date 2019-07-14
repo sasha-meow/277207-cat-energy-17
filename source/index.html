@@ -7,9 +7,9 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img class="page-header__logo-image logo-image">
+        <img src="img/logo-image.svg" class="page-header__logo-image logo-image" width="" height="" alt="Логотип Cat Energy">
         <!-- Эти два элемента отдельно, потому что на мобильной версии отступ у подписи другой. А изображением подпись сделала на случай, если шрифты не загрузятся — логотип должен быть неизменным -->
-        <img class="page-header__logo-title logo-title">
+        <img src="img/logo-title.png" class="page-header__logo-title logo-title" width="" height="" alt="Название Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Развернуть меню</button>
@@ -69,5 +69,33 @@
         </ul>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <!-- Сомневаюсь, кому присвоить класс logo. Решила, что должен быть у ссылки, так как этот блок использовался раньше в хедере именно как ссылка и могут быть специфичные стили (например, отмена встроенных). -->
+        <a class="logo">
+          <img src="img/logo-title.png" class="logo-title" width="" height="" alt="Логотип Cat Energy">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://vk.com" class="social__link social__link--vk">Мы в Вконтакет</a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.instagram.com" class="social__link social__link--instagram">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.facebook.com" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+    </footer>
   </body>
 </html>
