@@ -26,6 +26,53 @@
     </header>
 
     <main class="page-main">
+      <section class="profile">
+        <h1 class="profile__title">Подбор программы</h1>
+        <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="profile__form">
+          <fieldset class="profile__main">
+            <label class="profile__label" for="user-name">Имя:*</label>
+            <!-- Пока не поняла, будут ли полям ввода нужны уникальные классы. -->
+            <input class="profile__entry-field" id="user-name" type="text" name="user-name" placeholder="Барсик" required>
+            <label class="profile__label" for="weight">Вес (кг):*</label>
+            <input class="profile__entry-field" id="weight" type="number" name="weight" placeholder="7" required>
+            <label class="profile__label" for="age">Возраст (лет):</label>
+            <input class="profile__entry-field" id="age" type="number" name="age" placeholder="7">
+          </fieldset>
+          <fieldset class="profile__purpose">
+            <input class="profile__radio-button" id="weight-loss" type="radio" name="purpose" value="weight-loss">
+            <label class="profile__label" for="weight-loss"></label>
+            <input class="profile__radio-button" id="weight-gain" type="radio" name="purpose" value="weight-gain">
+            <label class="profile__label" for="weight-gain"></label>
+            <input class="profile__radio-button" id="unknown" type="radio" name="purpose" value="unknown">
+            <label class="profile__label" for="unknown"></label>
+          </fieldset>
+          <fieldset class="profile__contacts">
+            <legend class="profile__contacts-title">Контактные данные (владельца кота)</legend>
+            <label class="profile__label" for="email">E-mail:*</label>
+            <input class="profile__entry-field profile__entry-field--letter" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <label class="profile__label" for="phone">Телефон:*</label>
+            <input class="profile__entry-field profile__entry-field--telephone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+          <fieldset class="profile__comment">
+            <legend class="profile__comment-title">Комментарий</legend>
+            <textarea class="profile__entry-field" name="about" rows="" cols="">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="profile__additionally">
+            <legend class="profile__additionally-title">Дополнительно</legend>
+            <input class="profile__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+            <label class="profile__label" for="sweetener">Сахарозаменитель</label>
+            <input class="profile__checkbox" id="water" type="checkbox" name="water">
+            <label class="profile__label" for="water">Питьевая вода</label>
+            <input class="profile__checkbox" id="milk" type="checkbox" name="milk">
+            <label class="profile__label" for="milk">Молоко</label>
+            <input class="profile__checkbox" id="vitamins" type="checkbox" name="vitamins">
+            <label class="profile__label" for="vitamins">Витамины</label>
+          </fieldset>
+          <button class="profile__button button" type="submit">Отправить заявку</button>
+          <span class="profile__note">* — Обязательные поля</span>
+        </form>
+      </section>
       <section class="location">
         <h2 class="visually-hidden">Местоположение Cat Energy</h2>
         <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
