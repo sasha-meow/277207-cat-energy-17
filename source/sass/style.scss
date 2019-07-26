@@ -1,4 +1,21 @@
 @import "blocks/page-header.scss";
+@import "variables.scss";
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+        url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+        url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
 html, body {
   margin: 0;
@@ -6,9 +23,14 @@ html, body {
 }
 
 body {
-  color: #111111;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  color: $text-dark;
 
-  background-color: #ffffff;
+  background-color: $background;
 }
 
 
