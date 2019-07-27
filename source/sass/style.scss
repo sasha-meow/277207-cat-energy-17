@@ -1,5 +1,9 @@
-@import "blocks/page-header.scss";
 @import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/primary-title.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -30,7 +34,7 @@ body {
   line-height: 18px;
   color: $text-darkest;
 
-  background-color: $background;
+  background-color: $background-primary;
 }
 
 
