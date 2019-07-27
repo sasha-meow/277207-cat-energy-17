@@ -6,6 +6,9 @@
 @import "blocks/button.scss";
 @import "blocks/purpose.scss";
 @import "blocks/work-process.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -29,7 +32,7 @@ html, body {
 }
 
 body {
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
