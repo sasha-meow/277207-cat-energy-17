@@ -1,0 +1,51 @@
+.main-products {
+  color: $text-darkest;
+
+  background-color: $background-primary;
+}
+
+.main-products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-products__item {
+  padding: 20px;
+
+  border-bottom: 1px solid $outline;
+}
+
+.main-products__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-products__characteristic {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-dark;
+}
+
+.main-products__more {
+  padding: 20px;
+
+  border-bottom: 1px solid $outline;
+}
+
+.main-products__show {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-products__tastes {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-dark;
+}
