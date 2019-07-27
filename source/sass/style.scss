@@ -4,6 +4,7 @@
 @import "blocks/primary-title.scss";
 @import "blocks/promo.scss";
 @import "blocks/button.scss";
+@import "blocks/purpose.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -27,7 +28,7 @@ html, body {
 }
 
 body {
-  font-family: "Oswald";
+  font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;

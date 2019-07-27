@@ -1,0 +1,47 @@
+.purpose {
+  padding: 20px;
+
+  color: $text-darkest;
+
+  background-color: $background-primary;
+}
+
+.purpose__variants {
+  list-style: none;
+}
+
+.purpose__item {
+  padding: 20px;
+
+  background-color: $background-secondary;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.purpose__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.purpose__description {
+  font-family: Arial;
+  color: $text-dark;
+}
+
+.purpose__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-darkest;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
