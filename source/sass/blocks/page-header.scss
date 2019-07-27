@@ -1,15 +1,13 @@
 .page-header {
   padding: 20px;
 
-  &--regular {
-    border-bottom: 1px solid $outline;
-  }
-}
-
-.page-header__navigation-wrapper {
   color: $text-darkest;
 
   background-color: $background-primary;
+
+  &--regular {
+    border-bottom: 1px solid $outline;
+  }
 }
 
 
