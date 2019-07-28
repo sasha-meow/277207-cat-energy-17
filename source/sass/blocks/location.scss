@@ -3,7 +3,11 @@
 
   color: $text-darkest;
 
-  background-color: $background-primary;
+  background-color: $background-secondary;
+
+  &--main {
+    background-color: $background-primary;
+  }
 }
 
 .location__invitation {

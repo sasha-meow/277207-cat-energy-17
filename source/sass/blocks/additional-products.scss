@@ -1,0 +1,46 @@
+.additional-products {
+  padding: 20px;
+  padding-bottom: 35px;
+
+  color: $text-darkest;
+
+  background-color: $background-primary;
+}
+
+.additional-products__title {
+  border-bottom: 1px solid $outline;
+}
+
+.additional-products__cell {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-dark;
+
+  &--name {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+}
+
+.additional-products__button {
+    font-family: "Oswald", "Arial", sans-serif;
+}
+
+.additional-products__present {
+  width: 280px;
+  min-height: 289px;
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $text-light;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
