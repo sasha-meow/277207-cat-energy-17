@@ -1,0 +1,47 @@
+.example {
+  padding: 20px;
+
+  color: $text-darkest;
+
+  background-color: $background-secondary;
+}
+
+.example__title {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  color: $text-dark;
+}
+
+.example__statistics-cell {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &--indicator {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: $text-dark;
+    text-transform: lowercase;
+  }
+
+  &--nutrition {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.example__before,
+.example__after {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
