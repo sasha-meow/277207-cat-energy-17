@@ -19,11 +19,11 @@ body {
 }
 
 body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $text-darkest;
 
   background-color: $background-primary;
