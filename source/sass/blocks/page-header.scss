@@ -1,6 +1,4 @@
 .page-header {
-  padding: 20px;
-
   color: $text-darkest;
 
   background-color: $background-primary;
@@ -8,4 +6,8 @@
   &--regular {
     border-bottom: 1px solid $outline;
   }
+}
+
+.page-header__wrapper {
+  @include wrapper;
 }

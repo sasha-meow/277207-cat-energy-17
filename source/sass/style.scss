@@ -1,5 +1,6 @@
-@import "variables.scss";
-@import "mixins.scss";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "utils/fonts.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/primary-title.scss";

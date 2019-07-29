@@ -4,6 +4,10 @@
   background-color: $background-primary;
 }
 
+.main-products__wrapper {
+  @include wrapper;
+}
+
 .main-products__list {
   margin: 0;
   padding: 0;
@@ -24,9 +28,9 @@
 }
 
 .main-products__characteristic {
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  font-family: $font-secondary;
   color: $text-dark;
 }
 
@@ -44,9 +48,9 @@
 }
 
 .main-products__tastes {
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  font-family: $font-secondary;
   text-align: center;
   color: $text-dark;
 }

@@ -1,9 +1,11 @@
 .purpose {
-  padding: 20px;
-
   color: $text-darkest;
 
   background-color: $background-primary;
+}
+
+.purpose__wrapper {
+  @include wrapper;
 }
 
 .purpose__variants {
@@ -26,14 +28,14 @@
 .purpose__title {
   margin: 0;
 
-  font-size: 24px;
   font-weight: normal;
+  font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .purpose__description {
-  font-family: "Arial", sans-serif;
+  font-family: $font-secondary;
   color: $text-dark;
 }
 
@@ -41,6 +43,6 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-darkest;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
 }

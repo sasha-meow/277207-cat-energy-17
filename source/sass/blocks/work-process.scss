@@ -1,5 +1,5 @@
-.work-process {
-  padding: 20px;
+.work-process__wrapper {
+  @include wrapper;
 }
 
 .work-process__list {
@@ -10,6 +10,6 @@
 }
 
 .work-process__item {
-  font-family: "Arial", sans-serif;
+  font-family: $font-secondary;
   color: $text-dark;
 }
