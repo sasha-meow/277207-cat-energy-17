@@ -1,6 +1,6 @@
 @import "utils/variables.scss";
-@import "utils/mixins.scss";
 @import "utils/fonts.scss";
+
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/primary-title.scss";
@@ -26,8 +26,8 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $text-darkest;
+  font-family: $font-family-primary;
+  color: $text-color-darkest;
 
-  background-color: $background-primary;
+  background-color: $background-color-primary;
 }
