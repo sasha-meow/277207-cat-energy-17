@@ -1,11 +1,9 @@
 .main-products {
-  color: $text-darkest;
+  padding: 20px;
 
-  background-color: $background-primary;
-}
+  color: $text-color-darkest;
 
-.main-products__wrapper {
-  @include wrapper;
+  background-color: $background-color-primary;
 }
 
 .main-products__list {
@@ -16,9 +14,7 @@
 }
 
 .main-products__item {
-  padding: 20px;
-
-  border-bottom: 1px solid $outline;
+  border-bottom: 1px solid $outline-color;
 }
 
 .main-products__title {
@@ -30,14 +26,12 @@
 .main-products__characteristic {
   font-size: 12px;
   line-height: 16px;
-  font-family: $font-secondary;
-  color: $text-dark;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
 }
 
 .main-products__more {
-  padding: 20px;
-
-  border-bottom: 1px solid $outline;
+  border-bottom: 1px solid $outline-color;
 }
 
 .main-products__show {
@@ -50,7 +44,7 @@
 .main-products__tastes {
   font-size: 12px;
   line-height: 16px;
-  font-family: $font-secondary;
+  font-family: $font-family-secondary;
   text-align: center;
-  color: $text-dark;
+  color: $text-color-dark;
 }

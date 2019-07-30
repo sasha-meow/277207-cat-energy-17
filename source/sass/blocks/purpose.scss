@@ -1,11 +1,9 @@
 .purpose {
-  color: $text-darkest;
+  padding: 20px;
 
-  background-color: $background-primary;
-}
+  color: $text-color-darkest;
 
-.purpose__wrapper {
-  @include wrapper;
+  background-color: $background-color-primary;
 }
 
 .purpose__variants {
@@ -18,7 +16,7 @@
 .purpose__item {
   padding: 20px;
 
-  background-color: $background-secondary;
+  background-color: $background-color-secondary;
 
   &:first-child {
     margin-bottom: 20px;
@@ -35,14 +33,14 @@
 }
 
 .purpose__description {
-  font-family: $font-secondary;
-  color: $text-dark;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
 }
 
 .purpose__link {
   font-size: 16px;
   line-height: 16px;
-  color: $text-darkest;
+  color: $text-color-darkest;
   text-transform: uppercase;
   text-decoration: none;
 }

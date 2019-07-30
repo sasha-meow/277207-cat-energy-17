@@ -1,13 +1,12 @@
 .page-header {
-  color: $text-darkest;
+  padding: 20px;
 
-  background-color: $background-primary;
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
 
   &--regular {
-    border-bottom: 1px solid $outline;
+    border-bottom: 1px solid $outline-color;
   }
 }
 
-.page-header__wrapper {
-  @include wrapper;
-}
