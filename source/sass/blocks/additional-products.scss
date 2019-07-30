@@ -2,32 +2,32 @@
   padding: 20px;
   padding-bottom: 35px;
 
-  color: $text-darkest;
+  color: $text-color-darkest;
 
-  background-color: $background-primary;
+  background-color: $background-color-primary;
 }
 
 .additional-products__title {
-  border-bottom: 1px solid $outline;
+  border-bottom: 1px solid $outline-color;
 }
 
 .additional-products__cell {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: $text-dark;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
 
   &--name {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
+    font-family: $font-family-primary;
     color: #222222;
     text-transform: uppercase;
   }
 }
 
 .additional-products__button {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $font-family-primary;
 }
 
 .additional-products__present {
@@ -35,11 +35,11 @@
   min-height: 289px;
   margin: 0;
 
-  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-family: $font-family-secondary;
+  color: $text-color-light;
   text-align: center;
-  color: $text-light;
 
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;

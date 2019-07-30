@@ -1,14 +1,14 @@
 .example {
   padding: 20px;
 
-  color: $text-darkest;
+  color: $text-color-darkest;
 
-  background-color: $background-secondary;
+  background-color: $background-color-secondary;
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
-  color: $text-dark;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
 }
 
 .example__statistics-cell {
@@ -17,10 +17,10 @@
   text-transform: uppercase;
 
   &--indicator {
-    font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 12px;
-    color: $text-dark;
+    font-family: $font-family-secondary;
+    color: $text-color-dark;
     text-transform: lowercase;
   }
 
