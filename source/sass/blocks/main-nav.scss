@@ -3,6 +3,10 @@
   min-height: 199px;
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
@@ -11,8 +15,4 @@
   .main-nav__list {
     display: flex;
   }
-}
-
-.main-nav__toggle {
-  display: none;
 }

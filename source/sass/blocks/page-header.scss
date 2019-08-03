@@ -25,11 +25,25 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+
+    &--main {
+      flex-direction: column;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-header {
     &--main {
       background-image: url("../../img/index-background-mobile@1x.jpg");
       background-repeat: no-repeat;
     }
+  }
+
+  .page-header--main .site-list__link {
+    color: $text-color-light;
   }
 }
