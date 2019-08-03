@@ -1,0 +1,11 @@
+.page-header {
+  padding: 20px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+
+  &--regular {
+    border-bottom: 1px solid $outline-color;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  color: $text-color-light;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $button-color-primary;
+
+  &--light {
+    color: $text-color-darkest;
+
+    background-color: $button-color-secondary;
+  }
+}

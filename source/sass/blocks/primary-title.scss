@@ -1,0 +1,10 @@
+.primary-title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $text-color-darkest;
+
+  &--main {
+    color: $text-color-light;
+  }
+}

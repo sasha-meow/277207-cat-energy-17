@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи. Подбор программы</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--regular">
       <a href="index.html" class="page-header__logo logo">
         <img src="img/logo-image.svg" class="logo__image" width="" height="" alt="Логотип Cat Energy">
       </a>
@@ -59,7 +60,7 @@
             </div>
           </fieldset>
           <fieldset class="profile__contacts">
-            <legend class="profile__contacts-title secondary-title">Контактные данные (владельца кота)</legend>
+            <legend class="profile__contacts-title tertiary-title">Контактные данные (владельца кота)</legend>
             <div class="profile__input-group">
               <label class="profile__label" for="email">E-mail:<span aria-label="Обязательное поле">*</span></label>
               <input class="profile__entry-field profile__entry-field--letter" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -70,13 +71,13 @@
             </div>
           </fieldset>
           <fieldset class="profile__comment">
-            <legend class="profile__comment-title secondary-title">Комментарий</legend>
+            <legend class="profile__comment-title tertiary-title">Комментарий</legend>
             <div class="profile__input-group">
               <textarea class="profile__entry-field" name="about" rows="" cols="">Расскажите обо всех повадках кота</textarea>
             </div>
           </fieldset>
           <fieldset class="profile__additionally">
-            <legend class="profile__additionally-title secondary-title">Дополнительно</legend>
+            <legend class="profile__additionally-title tertiary-title">Дополнительно</legend>
             <div class="profile__input-group">
               <input class="profile__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
               <label class="profile__label" for="sweetener">Сахарозаменитель</label>
@@ -100,9 +101,11 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Местоположение Cat Energy</h2>
-        <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <div class="location__map"></div>
+        <div class="location__wrapper">
+          <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <div class="location__map"></div>
+        </div>
       </section>
     </main>
 

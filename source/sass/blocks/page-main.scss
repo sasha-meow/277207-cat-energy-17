@@ -1,0 +1,8 @@
+.page-main__title {
+  margin: 0;
+  padding: 20px;
+
+  &--outline {
+    border-bottom: 1px solid $outline-color;
+  }
+}

@@ -1,0 +1,32 @@
+@import "utils/variables.scss";
+@import "utils/fonts.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/primary-title.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
+@import "blocks/purpose.scss";
+@import "blocks/work-process.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-products.scss";
+@import "blocks/secondary-title.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-family-primary;
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+}

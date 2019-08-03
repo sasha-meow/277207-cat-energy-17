@@ -1,0 +1,15 @@
+.work-process {
+  padding: 20px;
+}
+
+.work-process__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.work-process__item {
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+}

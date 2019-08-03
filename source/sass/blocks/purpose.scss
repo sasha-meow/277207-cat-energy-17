@@ -1,0 +1,46 @@
+.purpose {
+  padding: 20px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+}
+
+.purpose__variants {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.purpose__item {
+  padding: 20px;
+
+  background-color: $background-color-secondary;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.purpose__title {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.purpose__description {
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+}
+
+.purpose__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-darkest;
+  text-transform: uppercase;
+  text-decoration: none;
+}
