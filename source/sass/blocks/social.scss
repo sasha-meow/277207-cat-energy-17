@@ -1,6 +1,13 @@
 .social {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.social__item {
+  width: 30px;
+  height: 30px;
+  background-color: lightgreen;
 }

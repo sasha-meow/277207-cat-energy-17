@@ -1,7 +1,28 @@
 .page-footer {
-  padding: 20px;
+  padding: 0 20px;
 
   color: $text-color-dark;
 
   background-color: $background-color-secondary;
+}
+
+.page-footer__logo {
+  display: block;
+  min-height: 94px;
+}
+
+.page-footer__social {
+  min-height: 62px;
+}
+
+.page-footer__copyright {
+  display: block;
+  min-height: 78px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
