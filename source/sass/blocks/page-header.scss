@@ -1,5 +1,6 @@
 .page-header {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 
   color: $text-color-darkest;
 
@@ -7,5 +8,28 @@
 
   &--regular {
     border-bottom: 1px solid $outline-color;
+  }
+}
+
+.page-header__navigation-wrapper {
+  display: flex;
+}
+
+.page-header__logo {
+  width: 280px;
+  height: 66px;
+  padding: 0 20px;
+}
+
+.page-header__title {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    &--main {
+      background-image: url("../../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }

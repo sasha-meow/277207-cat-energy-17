@@ -1,0 +1,18 @@
+.main-nav {
+  display: none;
+  min-height: 199px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    min-height: 83px;
+  }
+  .main-nav__list {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
