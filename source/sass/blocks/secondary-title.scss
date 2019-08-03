@@ -1,8 +1,12 @@
 .secondary-title {
-  margin: 0;
-
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   color: $text-color-darkest;
+}
+
+@media (min-width: $tablet-width) {
+  .secondary-title {
+    font-size: 60px;
+  }
 }

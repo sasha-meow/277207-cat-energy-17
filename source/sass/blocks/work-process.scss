@@ -1,15 +1,97 @@
 .work-process {
-  padding: 20px;
+  padding: 0 20px;
+
+  min-height: 385px;
+}
+
+.work-process__title {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 28px;
 }
 
 .work-process__list {
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
 
   list-style: none;
 }
 
 .work-process__item {
+  min-height: 60px;
+  margin-bottom: 20px;
+
   font-family: $font-family-secondary;
   color: $text-color-dark;
+
+  // Временно
+  background-color: lightgreen;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .work-process {
+    padding: 0 30px;
+  }
+
+  .work-process__title {
+    margin-top: 47px;
+    margin-bottom: 73px;
+  }
+
+  .work-process__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-process__item {
+    width: 245px;
+    min-height: 228px;
+    margin-bottom: 89px;
+
+    &:nth-child(2n+1) {
+      margin-right: 138px;
+    }
+    // Если не задать отдельно для планшета, то применятся мобильные стили
+    &:last-child {
+      margin-bottom: 89px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-process {
+    padding: 0 110px;
+  }
+
+  .work-process__title {
+    margin-top: 74px;
+  }
+
+  .work-process__list {
+    margin-bottom: 0px;
+  }
+
+  .work-process__item {
+    margin-right: 80px;
+    margin-bottom: 0px;
+
+    // Восстанавливает свойство после планшета
+    &:nth-child(2n+1) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    // Правит стили предыдущих версий
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
