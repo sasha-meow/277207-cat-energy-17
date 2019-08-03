@@ -14,3 +14,19 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-color-darker;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    color: $text-color-light;
+  }
+}
