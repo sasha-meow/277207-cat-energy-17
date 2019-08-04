@@ -21,7 +21,14 @@
   .promo {
     background-image: none;
   }
+
   .promo__slogan {
     color: $text-color-darkest;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-color: transparent;
   }
 }

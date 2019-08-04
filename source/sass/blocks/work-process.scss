@@ -73,12 +73,12 @@
   }
 
   .work-process__list {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .work-process__item {
     margin-right: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     // Восстанавливает свойство после планшета
     &:nth-child(2n+1) {
