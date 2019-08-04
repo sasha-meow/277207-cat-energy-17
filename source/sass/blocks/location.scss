@@ -8,6 +8,13 @@
   }
 }
 
+.location__address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 114px;
+  padding: 0 20px;
+}
+
 .location__invitation {
   font-size: 16px;
   line-height: 20px;
@@ -27,4 +34,35 @@
 
   background-image: url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .location__address-wrapper {
+    min-height: 201px;
+  }
+
+  .location__map {
+    min-height: 400px;
+    background-image: url("../../img/bg-map-tablet@1x.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    position: relative;
+  }
+
+  .location__address-wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 530px;
+
+    background-color: $background-color-primary;
+  }
+
+  .location__map {
+    background-image: url("../../img/bg-map-desktop@1x.png");
+  }
 }
