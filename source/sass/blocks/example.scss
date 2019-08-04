@@ -6,9 +6,12 @@
 
 .example__title {
   margin: 0;
+  margin-top: 57px;
 }
 
 .example__description {
+  margin: 0;
+
   font-family: $font-family-secondary;
   color: $text-color-dark;
 }
@@ -38,4 +41,48 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    min-height: 1040px;
+    padding: 0 30px;
+
+    background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
+  }
+
+  .example__title {
+    margin-top: 12px;
+  }
+
+  .example__description {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 653px;
+    padding: 0 110px;
+
+    background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
+  }
+
+  .example__title {
+    margin-top: 55px;
+  }
+
+  .example__description {
+    width: 431px;
+  }
+
+  .example__statistics {
+    width: 431px;
+  }
 }
