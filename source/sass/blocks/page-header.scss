@@ -35,6 +35,7 @@
   .page-header {
     flex-direction: row;
     min-height: 90px;
+    border-bottom: none;
 
 // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
     &--main {
@@ -54,5 +55,9 @@
       background-image: url("../../img/index-background-mobile@1x.jpg");
       background-repeat: no-repeat;
     }
+  }
+
+  .page-header--main .site-list__link {
+    color: $text-color-light;
   }
 }
