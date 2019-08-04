@@ -17,6 +17,7 @@
 @import "blocks/site-list.scss";
 @import "blocks/social.scss";
 @import "blocks/tertiary-title.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/work-process.scss";
 
 html,
@@ -34,21 +35,4 @@ body {
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
