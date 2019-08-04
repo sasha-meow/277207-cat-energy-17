@@ -1,0 +1,42 @@
+.additional-products {
+  padding: 20px;
+  padding-bottom: 35px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+}
+
+.additional-products__title {
+  border-bottom: 1px solid $outline-color;
+}
+
+.additional-products__cell {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+
+  &--name {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-family-primary;
+    color: $text-color-darker;
+    text-transform: uppercase;
+  }
+}
+
+.additional-products__present {
+  width: 280px;
+  min-height: 289px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family-secondary;
+  color: $text-color-light;
+  text-align: center;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}

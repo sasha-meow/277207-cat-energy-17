@@ -1,0 +1,32 @@
+.location {
+  padding: 20px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-secondary;
+
+  &--main {
+    background-color: $background-color-primary;
+  }
+}
+
+.location__invitation {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+}
+
+.location__map {
+  min-height: 362px;
+
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+}

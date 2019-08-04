@@ -1,0 +1,39 @@
+.example {
+  padding: 20px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-secondary;
+}
+
+.example__description {
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+}
+
+.example__statistics-cell {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &--indicator {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $font-family-secondary;
+    color: $text-color-dark;
+    text-transform: lowercase;
+  }
+
+  &--nutrition {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.example__before,
+.example__after {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

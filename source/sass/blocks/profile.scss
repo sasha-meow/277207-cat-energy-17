@@ -1,0 +1,44 @@
+.profile {
+  padding: 20px;
+
+  color: $text-color-darkest;
+
+  background-color: $background-color-primary;
+}
+
+.profile__description {
+  color: $text-color-darkest;
+  text-transform: uppercase;
+}
+
+.profile__entry-field {
+  font-size: 16px;
+  color: $text-color-darker;
+  text-transform: uppercase;
+
+  &--textarea {
+    font-family: $font-family-primary;
+    color: $text-color-dark;
+    text-transform: uppercase;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    font-family: $font-family-primary;
+    color: $text-color-dark;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+.profile__label {
+  font-size: 16px;
+  color: $text-color-darker;
+  text-transform: uppercase;
+}
+
+.profile__note {
+  line-height: 16px;
+  font-family: $font-family-secondary;
+  color: $text-color-dark;
+}
