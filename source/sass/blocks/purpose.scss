@@ -1,6 +1,4 @@
 .purpose {
-  padding: 0 20px;
-
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
@@ -47,10 +45,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .purpose {
-    padding: 0 30px;
-  }
-
   .purpose__item {
     width: 708px;
     min-height: 372px;
@@ -62,19 +56,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .purpose {
-    padding: 0 110px;
-  }
-
   .purpose__variants {
     display: flex;
+    justify-content: space-between;
   }
 
   .purpose__item {
     width: 570px;
 
     &:first-child {
-      margin-right: 80px;
       margin-bottom: 0;
     }
   }

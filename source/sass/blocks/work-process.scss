@@ -1,6 +1,4 @@
 .work-process {
-  padding: 0 20px;
-
   min-height: 385px;
 }
 
@@ -34,10 +32,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .work-process {
-    padding: 0 30px;
-  }
-
   .work-process__title {
     margin-top: 47px;
     margin-bottom: 73px;
@@ -64,10 +58,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .work-process {
-    padding: 0 110px;
-  }
-
   .work-process__title {
     margin-top: 74px;
   }

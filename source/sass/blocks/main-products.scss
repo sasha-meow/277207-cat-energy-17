@@ -1,6 +1,4 @@
 .main-products {
-  padding: 0 20px;
-
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
@@ -56,9 +54,7 @@
 @media (min-width: $tablet-width) {
   .main-products {
     padding-top: 8px;
-    padding-right: 30px;
     padding-bottom: 60px;
-    padding-left: 30px;
   }
 
   .main-products__list {
@@ -86,11 +82,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-products {
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-
   .main-products__item {
     width: 245px;
     min-height: 431px;
