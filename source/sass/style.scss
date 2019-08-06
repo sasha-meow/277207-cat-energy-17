@@ -2,6 +2,7 @@
 @import "utils/variables.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/button.scss";
+@import "blocks/container.scss";
 @import "blocks/copyright.scss";
 @import "blocks/example.scss";
 @import "blocks/location.scss";
@@ -38,25 +39,4 @@ body {
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: 768px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1440px;
-    padding: 0 110px;
-  }
 }

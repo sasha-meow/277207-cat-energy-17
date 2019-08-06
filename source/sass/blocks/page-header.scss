@@ -7,11 +7,6 @@
 
   background-color: $background-color-primary;
 
-  &--main {
-    // Когда меню закрыто
-    min-height: 568px;
-  }
-
   &--regular {
     border-bottom: 1px solid $outline-color;
   }

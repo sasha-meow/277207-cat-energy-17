@@ -60,6 +60,7 @@
   .main-products__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -60px;
   }
 
   .main-products__item {
@@ -70,29 +71,17 @@
 
     background-color: $background-color-secondary;
     border-bottom: none;
-
-    &--more {
-      background-color: $background-color-primary;
-    }
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-products__list {
+    margin-right: -80px;
+  }
+
   .main-products__item {
     width: 245px;
     min-height: 431px;
     margin-right: 80px;
-
-    &:nth-child(2n) {
-      margin-right: 80px;
-    }
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
   }
 }

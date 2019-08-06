@@ -40,16 +40,16 @@
   .work-process__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -137px;
   }
 
   .work-process__item {
     width: 245px;
     min-height: 228px;
     margin-bottom: 89px;
+    margin-right: 137px;
 
-    &:nth-child(2n+1) {
-      margin-right: 138px;
-    }
+
     // Если не задать отдельно для планшета, то применятся мобильные стили
     &:last-child {
       margin-bottom: 89px;
@@ -59,29 +59,15 @@
 
 @media (min-width: $desktop-width) {
   .work-process__title {
-    margin-top: 74px;
+    margin-top: 72px;
   }
 
   .work-process__list {
+    margin-right: -80px;
     margin-bottom: 0;
   }
 
   .work-process__item {
     margin-right: 80px;
-    margin-bottom: 0;
-
-    // Восстанавливает свойство после планшета
-    &:nth-child(2n+1) {
-      margin-right: 80px;
-    }
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-
-    // Правит стили предыдущих версий
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
