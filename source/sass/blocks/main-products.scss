@@ -30,12 +30,6 @@
   color: $text-color-dark;
 }
 
-.main-products__more {
-  min-height: 210px;
-
-  border-bottom: 1px solid $outline-color;
-}
-
 .main-products__show {
   font-size: 16px;
   line-height: 20px;
@@ -71,6 +65,10 @@
 
     background-color: $background-color-secondary;
     border-bottom: none;
+
+    &--more {
+      background-color: $background-color-primary;
+    }
   }
 }
 
