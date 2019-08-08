@@ -46,7 +46,6 @@
 @media (min-width: $tablet-width) {
   .example {
     min-height: 1040px;
-    padding: 0 30px;
 
     background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
   }
@@ -69,13 +68,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 653px;
-    padding: 0 110px;
 
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }
 
   .example__title {
-    margin-top: 55px;
+    // margin-top: 25px;
   }
 
   .example__description {

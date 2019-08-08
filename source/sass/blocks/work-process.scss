@@ -10,7 +10,6 @@
 
 .work-process__list {
   margin: 0;
-  margin-bottom: 42px;
   padding: 0;
 
   list-style: none;
@@ -18,17 +17,13 @@
 
 .work-process__item {
   min-height: 60px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 
   font-family: $font-family-secondary;
   color: $text-color-dark;
 
   // Временно
   background-color: lightgreen;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -41,34 +36,30 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -137px;
-    margin-bottom: 0;
   }
 
   .work-process__item {
     width: 245px;
     min-height: 228px;
-    margin-bottom: 89px;
+    margin-top: 0;
     margin-right: 137px;
-
-
-    // Если не задать отдельно для планшета, то применятся мобильные стили
-    &:last-child {
-      margin-bottom: 89px;
-    }
+    margin-bottom: 89px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .work-process__title {
     margin-top: 72px;
+    margin-bottom: 43px;
   }
 
   .work-process__list {
     margin-right: -80px;
-    margin-bottom: 0;
   }
 
   .work-process__item {
+    margin-top: 30px;
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
