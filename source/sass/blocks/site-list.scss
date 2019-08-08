@@ -27,5 +27,9 @@
 @media (min-width: $desktop-width) {
   .site-list__link {
     font-size: 20px;
+
+    &--main {
+    color: $text-color-light;
+    }
   }
 }
