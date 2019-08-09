@@ -1,5 +1,7 @@
 .page-header {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 65px;
 
   color: $text-color-darkest;
 
@@ -7,5 +9,46 @@
 
   &--regular {
     border-bottom: 1px solid $outline-color;
+  }
+}
+
+.page-header__navigation-wrapper {
+  display: flex;
+}
+
+.page-header__logo {
+  width: 280px;
+  height: 65px;
+  padding: 0 20px;
+}
+
+.page-header__title {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    min-height: 90px;
+    border-bottom: none;
+
+    // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
+    &--main {
+      flex-direction: column;
+      min-height: 950px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 120px;
+
+    &--main {
+      min-height: 776px;
+
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }

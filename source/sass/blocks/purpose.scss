@@ -1,6 +1,4 @@
 .purpose {
-  padding: 20px;
-
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
@@ -14,7 +12,8 @@
 }
 
 .purpose__item {
-  padding: 20px;
+  width: 280px;
+  min-height: 266px;
 
   background-color: $background-color-secondary;
 
@@ -43,4 +42,30 @@
   color: $text-color-darkest;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .purpose__item {
+    width: 708px;
+    min-height: 372px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .purpose__variants {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .purpose__item {
+    width: 570px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
 }

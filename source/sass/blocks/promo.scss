@@ -1,4 +1,7 @@
 .promo {
+  min-height: 502px;
+  padding: 0 20px;
+
   color: $text-color-light;
 
   background-color: $background-color-primary;
@@ -7,7 +10,25 @@
 }
 
 .promo__slogan {
+  margin: 0;
+  padding: 0;
+
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+  }
+
+  .promo__slogan {
+    color: $text-color-darkest;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-color: transparent;
+  }
 }
