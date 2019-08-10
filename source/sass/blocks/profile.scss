@@ -1,9 +1,26 @@
 .profile {
-  padding: 20px;
+  padding-top: 15px;
 
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
+}
+
+.profile fieldset {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
+  border: none;
+}
+
+.profile legend {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border: none;
 }
 
 .profile__description {
@@ -37,8 +54,131 @@
   text-transform: uppercase;
 }
 
+.profile__main {
+  min-height: 210px;
+}
+
+.profile__purpose {
+  min-height: 158px;
+
+  border: 1px solid $outline-color;
+}
+
+.profile__contacts {
+  min-height: 225px;
+}
+
+.profile__contacts-title {
+  padding-top: 27px;
+}
+
+.profile__comment {
+  min-height: 245px;
+}
+
+.profile__comment-title {
+  padding-top: 16px;
+}
+
+.profile__additionally {
+  min-height: 240px;
+}
+
+.profile__additionally-title {
+  padding-top: 9px;
+}
+
+.profile__submit {
+  margin: 0;
+  min-height: 126px;
+}
+
 .profile__note {
   line-height: 16px;
   font-family: $font-family-secondary;
   color: $text-color-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    padding-right: 67px;
+    padding-left: 71px;
+  }
+
+  .profile__description {
+    min-height: 100px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile__main {
+    min-height: 296px;
+  }
+
+  .profile__purpose {
+    min-height: 196px;
+  }
+
+  .profile__contacts {
+    min-height: 340px;
+  }
+
+  .profile__contacts-title {
+    padding-top: 73px;
+  }
+
+  .profile__comment-title {
+    padding-top: 34px;
+  }
+
+  .profile__comment {
+    min-height: 365px;
+  }
+
+  .profile__additionally-title {
+    padding-top: 20px;
+  }
+
+  .profile__additionally {
+    min-height: 265px;
+  }
+
+  .profile__submit {
+    min-height: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .profile__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 218px;
+  }
+
+  .profile__main {
+    min-height: 200px;
+  }
+
+  .profile__purpose {
+    width: 570px;
+    min-height: 150px;
+  }
+
+  .profile__contacts {
+    min-height: 270px;
+  }
+
+  .profile__comment {
+    min-height: 367px;
+  }
+
+  .profile__additionally {
+    min-height: 210px;
+  }
 }
