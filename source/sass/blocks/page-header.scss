@@ -8,12 +8,10 @@
   background-color: $background-color-primary;
 
   &--regular {
+    display: flex;
+
     border-bottom: 1px solid $outline-color;
   }
-}
-
-.page-header__flex-wrapper {
-  display: flex;
 }
 
 .page-header__navigation-wrapper {
