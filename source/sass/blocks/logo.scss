@@ -1,0 +1,19 @@
+.logo {
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 174px;
+    height: 59px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

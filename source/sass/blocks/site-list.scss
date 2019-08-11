@@ -20,18 +20,40 @@
 .site-list__link {
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 25px;
   color: $text-color-darkest;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:focus {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
   .site-list__link {
+    padding-bottom: 6px;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     color: $text-color-darker;
+
+    &--active {
+      border-bottom: 1px solid $interactive-element-color;
+    }
   }
 }
 

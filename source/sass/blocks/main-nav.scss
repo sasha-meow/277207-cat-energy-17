@@ -1,6 +1,4 @@
 .main-nav {
-  // display: none;
-  // min-height: 199px;
   position: relative;
 }
 
@@ -64,10 +62,19 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
-    min-height: 120px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 440px;
   }
 }

@@ -19,8 +19,6 @@
 
 .page-header__logo {
   display: block;
-  width: 191px;
-  height: 39px;
   margin-top: 12px;
   margin-bottom: 15px;
   padding-left: 20px;
@@ -42,6 +40,18 @@
       min-height: 950px;
     }
   }
+
+  .page-header__navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .page-header__logo {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -53,6 +63,7 @@
 
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-position: 100% 0;
     }
   }
 }
