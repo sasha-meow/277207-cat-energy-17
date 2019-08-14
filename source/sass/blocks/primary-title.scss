@@ -6,6 +6,7 @@
 
   &--main {
     color: $text-color-light;
+    text-align: center;
   }
 }
 
@@ -16,6 +17,7 @@
 
     &--main {
       color: $text-color-darkest;
+      text-align: left;
     }
   }
 }

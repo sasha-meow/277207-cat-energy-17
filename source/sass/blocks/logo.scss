@@ -17,3 +17,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 203px;
+    height: 60px;
+  }
+}

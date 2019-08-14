@@ -1,34 +1,70 @@
 .promo {
-  min-height: 502px;
-  padding: 0 20px;
+  margin-top: -99px;
+  padding-top: 99px;
+  padding-bottom: 20px;
 
   color: $text-color-light;
 
   background-color: $background-color-primary;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center 72%, top;
+  background-size: 280px, 100% 51%;
 }
 
 .promo__slogan {
   margin: 0;
-  padding: 0;
+  margin-top: 27px;
+  margin-left: 40px;
 
   line-height: 14px;
   text-transform: uppercase;
 }
 
+.promo__button {
+  margin-top: 302px;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: none;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 530px;
+
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-size: 630px;
+    background-position: 80% 100%;
   }
 
   .promo__slogan {
+    margin-top: 41px;
+    margin-left: 89px;
+
+    font-size: 20px;
+    line-height: 20px;
     color: $text-color-darkest;
+  }
+
+  .promo__button {
+    margin-top: 47px;
+    margin-left: 87px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
+    padding-bottom: 190px;
+
     background-color: transparent;
+    background-image: none;
+  }
+
+  .promo__slogan {
+    margin-left: 80px;
+  }
+
+  .promo__button {
+    margin-top: 51px;
+    margin-left: 80px;
   }
 }
