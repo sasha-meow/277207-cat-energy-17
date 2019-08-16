@@ -58,16 +58,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__link {
-    font-size: 20px;
-
-    &--main {
-      color: $text-color-light;
-    }
-
-    &--active {
-      border-bottom: 1px solid $text-color-light;
-    }
+  .site-list--main .site-list__link {
+    color: $text-color-light;
 
     &:hover {
       color: rgba(255, 255, 255, 0.6);
@@ -75,6 +67,14 @@
 
     &:focus {
       color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
+
+    &--active {
+      border-bottom: 1px solid $text-color-light;
     }
   }
 }
