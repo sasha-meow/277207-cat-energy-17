@@ -1,13 +1,30 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   margin: 0;
-  padding: 0;
+  margin-right: -20px;
 
   list-style: none;
 }
 
 .social__item {
-  width: 30px;
-  height: 30px;
-  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
+
+.social__link:hover svg {
+  fill: $decoration-element-color;
+}
+
+.social__link:focus svg {
+  fill: $decoration-element-color;
+  opacity: 0.6;
+}
+
