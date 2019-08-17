@@ -15,6 +15,10 @@
   &:first-child {
     border-top: 1px solid $outline-color;
   }
+
+  &:last-child {
+    border: none;
+  }
 }
 
 .site-list__link {

@@ -1,6 +1,4 @@
 .main-products {
-  margin-top: 30px;
-
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
@@ -14,18 +12,24 @@
 }
 
 .main-products__item {
-  min-height: 208px;
+  padding-top: 22px;
 
   border-bottom: 1px solid $outline-color;
 }
 
 .main-products__title {
+  display: block;
+  width: 79px;
+  margin-left: 140px;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .main-products__characteristic {
+  padding-left: 140px;
+
   font-size: 12px;
   line-height: 16px;
   font-family: $font-family-secondary;
@@ -62,7 +66,6 @@
 
   .main-products__item {
     width: 324px;
-    min-height: 431px;
     margin-top: 140px;
     margin-right: 60px;
 
@@ -82,7 +85,6 @@
 
   .main-products__item {
     width: 245px;
-    min-height: 431px;
     margin-right: 80px;
   }
 }
