@@ -19,8 +19,8 @@
 
 .main-products__title {
   display: block;
-  width: 79px;
-  margin-left: 140px;
+  padding-left: 140px;
+  padding-right: 68px;
 
   font-size: 16px;
   line-height: 20px;
@@ -28,12 +28,17 @@
 }
 
 .main-products__characteristic {
-  padding-left: 140px;
+  margin-top: 12px;
+  padding-left: 139px;
 
   font-size: 12px;
   line-height: 16px;
   font-family: $font-family-secondary;
   color: $text-color-dark;
+}
+
+.main-products__button {
+  margin-top: 20px;
 }
 
 .main-products__show {

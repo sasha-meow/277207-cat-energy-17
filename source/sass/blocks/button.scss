@@ -5,6 +5,8 @@
   width: 280px;
   height: 40px;
 
+  font-size: 16px;
+  line-height: 20px;
   font-family: $font-family-primary;
   color: $text-color-light;
   text-transform: uppercase;
@@ -16,6 +18,11 @@
     color: $text-color-darkest;
 
     background-color: $button-color-secondary;
+  }
+
+  &--main {
+    font-size: 14px;
+    line-height: 18px;
   }
 
   &:hover {
@@ -32,7 +39,9 @@
     width: 245px;
     height: 52px;
 
+    &--main {
     font-size: 20px;
     line-height: 20px;
+  }
   }
 }
