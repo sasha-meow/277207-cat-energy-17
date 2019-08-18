@@ -12,15 +12,76 @@
 }
 
 .main-products__item {
-  padding-top: 22px;
+  position: relative;
+
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 22px 20px 23px 20px;
 
   border-bottom: 1px solid $outline-color;
+
+  &--more {
+    padding-top: 80px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    width: 140px;
+    height: 144px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../img/chicken-small-mobile@1x.jpg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/chicken-big-mobile@1x.jpg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/fish-small-mobile@1x.jpg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/fish-big-mobile@1x.jpg");
+  }
+
+  &:nth-child(5)::before {
+    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
+  }
+
+  &:nth-child(6)::before {
+    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
+  }
+
+  &:nth-child(7)::before {
+    background-image: url("../img/rice-small-mobile@1x.jpg");
+  }
+
+  &--more::before {
+    top: 26px;
+    left: 145px;
+
+    width: 31px;
+    height: 31px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    opacity: 0.2;
+  }
 }
 
 .main-products__title {
   display: block;
   padding-left: 140px;
-  padding-right: 68px;
+  padding-right: 65px;
 
   font-size: 16px;
   line-height: 20px;
@@ -37,11 +98,22 @@
   color: $text-color-dark;
 }
 
+.main-products__characteristic-cell {
+  width: 70px;
+
+  &:nth-child(2n) {
+    text-align: right;
+  }
+}
+
 .main-products__button {
   margin-top: 20px;
 }
 
 .main-products__show {
+  display: block;
+  padding-left: 3px;
+
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -49,11 +121,18 @@
 }
 
 .main-products__tastes {
+  display: block;
+  margin-top: 7px;
+
   font-size: 12px;
   line-height: 16px;
   font-family: $font-family-secondary;
   text-align: center;
   color: $text-color-dark;
+}
+
+.main-products__all {
+  margin-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,6 +152,7 @@
     width: 324px;
     margin-top: 140px;
     margin-right: 60px;
+    margin-left: 0;
 
     background-color: $background-color-secondary;
     border-bottom: none;
