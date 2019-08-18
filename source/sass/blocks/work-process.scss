@@ -65,21 +65,23 @@
 @media (min-width: $tablet-width) {
   .work-process {
     margin-top: 47px;
+
+    border-bottom: 1px solid $outline-color-primary;
   }
 
   .work-process__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72px;
+    margin-top: 28px;
     margin-right: -139px;
-    margin-bottom: 0;
+    margin-bottom: 13px;
   }
 
   .work-process__item {
     width: 245px;
-    margin-top: 0;
+    margin-top: 44px;
     margin-right: 139px;
-    margin-bottom: 89px;
+    margin-bottom: 45px;
     padding-top: 113px;
     padding-bottom: 45px;
     padding-left: 0;

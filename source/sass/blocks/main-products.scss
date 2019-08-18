@@ -18,7 +18,7 @@
   margin-left: -20px;
   padding: 22px 20px 23px 20px;
 
-  border-bottom: 1px solid $outline-color;
+  border-bottom: 1px solid $outline-color-primary;
 
   &--more {
     padding-top: 80px;
@@ -137,8 +137,7 @@
 
 @media (min-width: $tablet-width) {
   .main-products {
-    margin-top: 20px;
-    padding-top: 8px;
+    margin-top: 25px;
     padding-bottom: 60px;
   }
 
@@ -149,17 +148,48 @@
   }
 
   .main-products__item {
-    width: 324px;
+    width: 248px;
     margin-top: 140px;
     margin-right: 60px;
     margin-left: 0;
+    padding: 0 38px;
+    padding-top: 163px;
 
     background-color: $background-color-secondary;
     border-bottom: none;
 
     &--more {
+      border: 1px solid $outline-color-secondary;
       background-color: $background-color-primary;
     }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .main-products__title {
+    width: 126px;
+    padding: 0;
+    margin: 0 auto;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .main-products__characteristic {
+    width: 100%;
+    padding: 0;
+
+    font-size: 16px;
+
+    border-collapse: collapse;
+    border-bottom: 1px solid $outline-color-secondary;
+  }
+
+  .main-products__characteristic-cell {
+    padding-top: 13px;
+    padding-bottom: 7px;
   }
 }
 

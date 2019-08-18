@@ -5,7 +5,7 @@
   color: $text-color-darkest;
 
   background-color: $background-color-primary;
-  border-bottom: 1px solid $outline-color;
+  border-bottom: 1px solid $outline-color-primary;
 
   &--main {
     border-bottom: none;
@@ -32,13 +32,14 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     min-height: 90px;
     border-bottom: none;
 
     // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
     &--main {
       flex-direction: column;
-      min-height: 950px;
 
       background-repeat: no-repeat;
       background-position: 0 80px;

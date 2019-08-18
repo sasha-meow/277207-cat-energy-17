@@ -86,16 +86,19 @@
 .purpose__description {
   margin: 0;
   margin-top: 20px;
+  padding-bottom: 20px;
 
   font-family: $font-family-secondary;
   color: $text-color-dark;
+
+  border-bottom: 1px solid $outline-color-secondary;
 }
 
 .purpose__link {
   position: relative;
 
   display: inline-block;
-  margin-top: 42px;
+  margin-top: 21px;
   padding-right: 40px;
 
   font-size: 16px;

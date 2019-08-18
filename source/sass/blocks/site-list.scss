@@ -12,10 +12,10 @@
   padding: 21px 0;
   text-align: center;
 
-  border-bottom: 1px solid $outline-color;
+  border-bottom: 1px solid $outline-color-primary;
 
   &:first-child {
-    border-top: 1px solid $outline-color;
+    border-top: 1px solid $outline-color-primary;
   }
 
   &:last-child {
