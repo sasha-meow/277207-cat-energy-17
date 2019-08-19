@@ -15,7 +15,7 @@
   background-color: $button-color-primary;
 
   &--light {
-    color: $text-color-darkest;
+    color: $text-color-dark;
 
     background-color: $button-color-secondary;
   }
@@ -32,6 +32,14 @@
   &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--light:hover {
+    background-color: #ebebeb;
+  }
+
+  &--light:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +53,16 @@
 
       font-size: 20px;
       line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 169px;
+
+    &--large {
+      width: 245px;
     }
   }
 }

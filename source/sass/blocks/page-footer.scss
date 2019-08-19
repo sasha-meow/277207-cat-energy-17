@@ -34,7 +34,8 @@
   .page-footer__flex-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 150px;
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 
   .page-footer__logo  {
@@ -45,19 +46,5 @@
     margin: 0;
 
     border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__logo {
-    margin-top: 30px;
-  }
-
-  .page-footer__social {
-    margin-top: 10px;
-  }
-
-  .page-footer__copyright {
-    margin-top: 20px;
   }
 }

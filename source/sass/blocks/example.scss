@@ -52,7 +52,7 @@
   }
 
   .example__title {
-    margin-top: 12px;
+    margin-top: 40px;
   }
 
   .example__description {
@@ -65,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    min-height: 653px;
+    min-height: 640px;
 
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }

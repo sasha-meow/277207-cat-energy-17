@@ -34,7 +34,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 90px;
     border-bottom: none;
 
     // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
@@ -55,8 +54,6 @@
 
   .page-header__logo {
     padding: 0;
-
-    background-color: red;
   }
 
   .page-header__title {
@@ -67,20 +64,25 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    padding-top: 30px;
+
     &--main {
-      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 100% 0;
+      background-position: 63% 71%, 100% 0;
     }
   }
 
   .page-header__navigation-wrapper {
     padding: 0 110px;
-    padding-top: 30px;
   }
 
   .page-header__title {
     padding-top: 82px;
     padding-left: 190px;
+  }
+
+  .page-header__logo {
+
   }
 }

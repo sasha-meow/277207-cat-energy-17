@@ -79,13 +79,17 @@
     &:focus {
       color: rgba(255, 255, 255, 0.3);
     }
+
+    &--active {
+      border-bottom: 1px solid $text-color-light;
+    }
   }
 
   .site-list__link {
     font-size: 20px;
 
     &--active {
-      border-bottom: 1px solid $text-color-light;
+      border-bottom: 1px solid $decoration-element-color;
     }
   }
 }

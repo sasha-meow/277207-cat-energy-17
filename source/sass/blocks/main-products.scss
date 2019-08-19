@@ -137,7 +137,7 @@
 
 @media (min-width: $tablet-width) {
   .main-products {
-    margin-top: 25px;
+    margin-top: 22px;
     padding-bottom: 60px;
   }
 
@@ -149,7 +149,7 @@
 
   .main-products__item {
     width: 248px;
-    margin-top: 141px;
+    margin-top: 142px;
     margin-right: 60px;
     margin-left: 0;
     padding: 0 38px;
@@ -160,6 +160,8 @@
     border-bottom: none;
 
     &--more {
+      width: 246px;
+
       border: 1px solid $outline-color-secondary;
       background-color: $background-color-primary;
     }
@@ -198,6 +200,16 @@
 
     &:nth-child(7)::before {
       background-image: url("../img/rice-small-tablet@1x.png");
+    }
+
+    &--more::before {
+      top: 54px;
+      left: 132px;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../img/icon-plus.svg");
     }
 
     &--large::before {
@@ -241,6 +253,26 @@
   .main-products__button {
     margin-top: 31px;
   }
+
+  .main-products__show {
+    width: 140px;
+    margin: 0 auto;
+
+    font-size: 20px;
+  }
+
+  .main-products__tastes {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 27px;
+
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .main-products__all {
+    margin-top: 85px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -249,7 +281,26 @@
   }
 
   .main-products__item {
-    width: 245px;
+    width: 169px;
     margin-right: 80px;
+
+    &::before {
+      top: -46px;
+      left: 42px;
+    }
+
+    &--more {
+      width: 167px;
+    }
+
+    &--more::before {
+      top: 54px;
+      left: 92px;
+    }
+
+    &--large::before {
+      top: -85px;
+      left: 25px;
+    }
   }
 }
