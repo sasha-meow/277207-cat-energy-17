@@ -20,7 +20,7 @@
     background-color: $button-color-secondary;
   }
 
-  &--main {
+  &--large {
     font-size: 14px;
     line-height: 18px;
   }
@@ -36,12 +36,15 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    width: 245px;
-    height: 52px;
+    width: 249px;
+    height: 40px;
 
-    &--main {
-    font-size: 20px;
-    line-height: 20px;
-  }
+    &--large {
+      width: 245px;
+      height: 52px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
