@@ -7,26 +7,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--regular">
-      <div class="container">
-        <a href="index.html" class="page-header__logo logo">
-          <img src="img/logo-image.svg" class="logo__image" width="" height="" alt="Логотип Cat Energy">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Развернуть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html" class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="program.html" class="site-list__link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="page-header page-header--regular container">
+      <a href="index.html" class="page-header__logo logo">
+        <img src="img/logo-image.svg" class="logo__image" width="" height="" alt="Логотип Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Развернуть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="program.html" class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -170,7 +168,7 @@
       <section class="additional-products container">
         <h2 class="additional-products__title tertiary-title">Дополнительные товары</h2>
         <table class="additional-products__list">
-          <tr>
+          <tr class="additional-products__table-group">
             <td class="additional-products__cell additional-products__cell--name">Сахарозаменитель</td>
             <td class="additional-products__cell">1 упаковка (100 г)</td>
             <td class="additional-products__cell">200 Р.</td>
@@ -178,7 +176,7 @@
               <a href="#" class="additional-products__button button">Заказать</a>
             </td>
           </tr>
-          <tr>
+          <tr class="additional-products__table-group">
             <td class="additional-products__cell additional-products__cell--name">Питьевая вода</td>
             <td class="additional-products__cell">5 литров</td>
             <td class="additional-products__cell">50 Р.</td>
@@ -186,7 +184,7 @@
               <a href="#" class="additional-products__button button">Заказать</a>
             </td>
           </tr>
-          <tr>
+          <tr class="additional-products__table-group">
             <td class="additional-products__cell additional-products__cell--name">Молоко</td>
             <td class="additional-products__cell">1 литр</td>
             <td class="additional-products__cell">100 Р.</td>
@@ -194,7 +192,7 @@
               <a href="#" class="additional-products__button button">Заказать</a>
             </td>
           </tr>
-          <tr>
+          <tr class="additional-products__table-group">
             <td class="additional-products__cell additional-products__cell--name">Витамины</td>
             <td class="additional-products__cell">1 упаковка (30 г)</td>
             <td class="additional-products__cell">300 Р.</td>
@@ -207,17 +205,17 @@
       </section>
 
       <section class="location">
-        <div class="container">
+        <div class="location__address-wrapper container">
           <h2 class="visually-hidden">Местоположение Cat Energy</h2>
           <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <div class="location__map"></div>
         </div>
+        <div class="location__map"></div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__flex-wrapper container">
         <a class="page-footer__logo logo">
           <img src="img/logo-title.png" class="logo__title" width="" height="" alt="Логотип Cat Energy">
         </a>

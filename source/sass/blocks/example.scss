@@ -1,4 +1,6 @@
 .example {
+  min-height: 705px;
+
   color: $text-color-darkest;
 
   background-color: $background-color-secondary;
@@ -6,9 +8,12 @@
 
 .example__title {
   margin: 0;
+  margin-top: 40px;
 }
 
 .example__description {
+  margin: 0;
+
   font-family: $font-family-secondary;
   color: $text-color-dark;
 }
@@ -38,4 +43,39 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    min-height: 1040px;
+
+    background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
+  }
+
+  .example__title {
+    margin-top: 12px;
+  }
+
+  .example__description {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    min-height: 653px;
+
+    background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
+  }
+
+  .example__flex-wrapper {
+    display: flex;
+  }
+
+  .example__title {
+    margin-top: 25px;
+  }
 }

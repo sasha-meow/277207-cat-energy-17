@@ -7,26 +7,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--regular">
-      <div class="container">
-        <a href="index.html" class="page-header__logo logo">
-          <img src="img/logo-image.svg" class="logo__image" width="" height="" alt="Логотип Cat Energy">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Развернуть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html" class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="page-header page-header--regular container">
+      <a href="index.html" class="page-header__logo logo">
+        <img src="img/logo-image.svg" class="logo__image" width="" height="" alt="Логотип Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Развернуть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -34,88 +32,100 @@
       <section class="profile container">
         <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="profile__main">
-            <div class="profile__input-group">
-              <label class="profile__label" for="user-name">Имя:<span aria-label="Обязательное поле">*</span></label>
-              <input class="profile__entry-field" id="user-name" type="text" name="user-name" placeholder="Барсик" required>
-            </div>
-            <div class="profile__input-group">
-              <label class="profile__label" for="weight">Вес (кг):<span aria-label="Обязательное поле">*</span></label>
-              <input class="profile__entry-field" id="weight" type="number" name="weight" placeholder="7" required>
-            </div>
-            <div class="profile__input-group">
-              <label class="profile__label" for="age">Возраст (лет):</label>
-              <input class="profile__entry-field" id="age" type="number" name="age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="profile__purpose">
-            <div class="profile__input-group">
-              <input class="profile__radio-button" id="weight-loss" type="radio" name="purpose" value="weight-loss">
-              <label class="profile__label" for="weight-loss">Похудение</label>
-            </div>
-            <div class="profile__input-group">
-              <input class="profile__radio-button" id="weight-gain" type="radio" name="purpose" value="weight-gain">
-              <label class="profile__label" for="weight-gain">Набор массы</label>
-            </div>
-            <div class="profile__input-group">
-              <input class="profile__radio-button" id="unknown" type="radio" name="purpose" value="unknown">
-              <label class="profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
-          <fieldset class="profile__contacts">
-            <legend class="profile__contacts-title tertiary-title">Контактные данные (владельца кота)</legend>
-            <div class="profile__input-group">
-              <label class="profile__label" for="email">E-mail:<span aria-label="Обязательное поле">*</span></label>
-              <input class="profile__entry-field profile__entry-field--letter" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </div>
-            <div class="profile__input-group">
-              <label class="profile__label" for="phone">Телефон:<span aria-label="Обязательное поле">*</span></label>
-              <input class="profile__entry-field profile__entry-field--telephone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </div>
-          </fieldset>
-          <fieldset class="profile__comment">
-            <legend class="profile__comment-title tertiary-title">Комментарий</legend>
-            <div class="profile__input-group">
-              <textarea class="profile__entry-field profile__entry-field--textarea" name="about" rows="" cols="">Расскажите обо всех повадках кота</textarea>
-            </div>
-          </fieldset>
-          <fieldset class="profile__additionally">
-            <legend class="profile__additionally-title tertiary-title">Дополнительно</legend>
-            <div class="profile__input-group">
-              <input class="profile__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label class="profile__label" for="sweetener">Сахарозаменитель</label>
-            </div>
-            <div class="profile__input-group">
-              <input class="profile__checkbox" id="water" type="checkbox" name="water">
-              <label class="profile__label" for="water">Питьевая вода</label>
-            </div>
-            <div class="profile__input-group">
-              <input class="profile__checkbox" id="milk" type="checkbox" name="milk">
-              <label class="profile__label" for="milk">Молоко</label>
-            </div>
-            <div class="profile__input-group">
-              <input class="profile__checkbox" id="vitamins" type="checkbox" name="vitamins">
-              <label class="profile__label" for="vitamins">Витамины</label>
+          <div class="profile__flex-wrapper">
+            <fieldset>
+              <div class="profile__main">
+                <div class="profile__input-group">
+                  <label class="profile__label" for="user-name">Имя:<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="user-name" type="text" name="user-name" placeholder="Барсик" required>
+                </div>
+                <div class="profile__input-group">
+                  <label class="profile__label" for="weight">Вес (кг):<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="weight" type="number" name="weight" placeholder="7" required>
+                </div>
+                <div class="profile__input-group">
+                  <label class="profile__label" for="age">Возраст (лет):</label>
+                  <input class="profile__entry-field" id="age" type="number" name="age" placeholder="7">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="profile__purpose">
+              <div class="profile__purpose">
+                <div class="profile__input-group">
+                  <input class="profile__radio-button" id="weight-loss" type="radio" name="purpose" value="weight-loss">
+                  <label class="profile__label" for="weight-loss">Похудение</label>
+                </div>
+                <div class="profile__input-group">
+                  <input class="profile__radio-button" id="weight-gain" type="radio" name="purpose" value="weight-gain">
+                  <label class="profile__label" for="weight-gain">Набор массы</label>
+                </div>
+                <div class="profile__input-group">
+                  <input class="profile__radio-button" id="unknown" type="radio" name="purpose" value="unknown">
+                  <label class="profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset>
+            <div class="profile__contacts">
+              <legend class="profile__contacts-title tertiary-title">Контактные данные (владельца кота)</legend>
+              <div class="profile__input-group">
+                <label class="profile__label" for="email">E-mail:<span aria-label="Обязательное поле">*</span></label>
+                <input class="profile__entry-field profile__entry-field--letter" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="profile__input-group">
+                <label class="profile__label" for="phone">Телефон:<span aria-label="Обязательное поле">*</span></label>
+                <input class="profile__entry-field profile__entry-field--telephone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </fieldset>
-          <button class="profile__button button" type="submit">Отправить заявку</button>
-          <span class="profile__note"><span aria-label="Обязательное поле">*</span> — Обязательные поля</span>
+          <fieldset>
+            <div class="profile__comment">
+              <legend class="profile__comment-title tertiary-title">Комментарий</legend>
+              <div class="profile__input-group">
+                <textarea class="profile__entry-field profile__entry-field--textarea" name="about" rows="" cols="">Расскажите обо всех повадках кота</textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="profile__additionally">
+              <legend class="profile__additionally-title tertiary-title">Дополнительно</legend>
+              <div class="profile__input-group">
+                <input class="profile__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+                <label class="profile__label" for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="profile__input-group">
+                <input class="profile__checkbox" id="water" type="checkbox" name="water">
+                <label class="profile__label" for="water">Питьевая вода</label>
+              </div>
+              <div class="profile__input-group">
+                <input class="profile__checkbox" id="milk" type="checkbox" name="milk">
+                <label class="profile__label" for="milk">Молоко</label>
+              </div>
+              <div class="profile__input-group">
+                <input class="profile__checkbox" id="vitamins" type="checkbox" name="vitamins">
+                <label class="profile__label" for="vitamins">Витамины</label>
+              </div>
+            </div>
+          </fieldset>
+          <p class="profile__submit">
+            <button class="profile__button button" type="submit">Отправить заявку</button>
+            <span class="profile__note"><span aria-label="Обязательное поле">*</span> — Обязательные поля</span>
+          </p>
         </form>
       </section>
-      <section class="location">
-        <div class="container">
+      <section class="location location">
+        <div class="location__address-wrapper container">
           <h2 class="visually-hidden">Местоположение Cat Energy</h2>
-          <div class="location__wrapper">
-            <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-            <div class="location__map"></div>
-          </div>
+          <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
+        <div class="location__map"></div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__flex-wrapper container">
         <a class="page-footer__logo logo">
           <img src="img/logo-title.png" class="logo__title" width="" height="" alt="Логотип Cat Energy">
         </a>
