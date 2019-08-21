@@ -109,7 +109,7 @@
 
 @media (min-width: $tablet-width) {
   .main-products {
-    margin-top: 22px;
+    margin-top: 25px;
     padding-bottom: 60px;
   }
 
@@ -120,25 +120,31 @@
   }
 
   .main-products__item {
+    position: relative;
+
     width: 324px;
-    margin-top: 142px;
+    margin-top: 140px;
     margin-right: 60px;
     margin-left: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-top: 162px;
+    padding-bottom: 41px;
 
     background-color: $background-color-secondary;
     border-bottom: none;
 
     &--more {
+      display: block;
       width: 246px;
+      padding: 0 38px;
+      padding-top: 162px;
 
       border: 1px solid $outline-color-secondary;
       background-color: $background-color-primary;
     }
 
     &--more::before {
-      top: 54px;
+      top: 53px;
       left: 132px;
 
       width: 61px;
@@ -148,7 +154,23 @@
     }
   }
 
+  .main-products__image {
+    position: absolute;
+    top: -47px;
+
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+
+    &--large {
+      top: -83px;
+    }
+  }
+
   .main-products__image img {
+    display: block;
     width: 324px;
     height: auto;
   }
@@ -160,7 +182,6 @@
 
   .main-products__title {
     width: 130px;
-    padding: 0;
     margin: 0 auto;
 
     font-size: 20px;
@@ -183,11 +204,12 @@
 
   .main-products__characteristic-cell {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
   }
 
   .main-products__button {
-    margin-top: 31px;
+    margin: 0 auto;
+    margin-top: 33px;
   }
 
   .main-products__show {
@@ -212,12 +234,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-products {
+    margin-top: 24px;
+  }
+
   .main-products__list {
     margin-right: -80px;
   }
 
   .main-products__item {
-    width: 169px;
+    width: 245px;
+    margin-top: 142px;
     margin-right: 80px;
 
     &::before {
@@ -233,10 +260,10 @@
       top: 54px;
       left: 92px;
     }
+  }
 
-    &--large::before {
-      top: -85px;
-      left: 25px;
-    }
+  .main-products__image img {
+    width: 245px;
+    height: auto;
   }
 }
