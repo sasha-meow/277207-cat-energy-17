@@ -3,6 +3,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: -43px;
   right: 0;
@@ -13,6 +14,11 @@
 
   border: none;
   background-color: transparent;
+
+// Показывает переключатель, который по умолчанию скрыт, пока не работает JS
+  &--show {
+    display: block;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
