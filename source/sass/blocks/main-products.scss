@@ -12,61 +12,25 @@
 }
 
 .main-products__item {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   margin-right: -20px;
   margin-left: -20px;
-  padding: 22px 20px 23px 20px;
+  padding: 0 20px 24px 20px;
 
   border-bottom: 1px solid $outline-color-primary;
 
   &--more {
+    position: relative;
+
     padding-top: 80px;
   }
 
-  &::before {
+  &--more::before {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 20px;
-
-    width: 140px;
-    height: 144px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &:nth-child(1)::before {
-    background-image: url("../img/chicken-small-mobile@1x.jpg");
-  }
-
-  &:nth-child(2)::before {
-    background-image: url("../img/chicken-big-mobile@1x.jpg");
-  }
-
-  &:nth-child(3)::before {
-    background-image: url("../img/fish-small-mobile@1x.jpg");
-  }
-
-  &:nth-child(4)::before {
-    background-image: url("../img/fish-big-mobile@1x.jpg");
-  }
-
-  &:nth-child(5)::before {
-    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-  }
-
-  &:nth-child(6)::before {
-    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-  }
-
-  &:nth-child(7)::before {
-    background-image: url("../img/rice-small-mobile@1x.jpg");
-  }
-
-  &--more::before {
     top: 26px;
     left: 145px;
 
@@ -80,17 +44,20 @@
 
 .main-products__title {
   display: block;
-  padding-left: 140px;
-  padding-right: 65px;
+  width: 80px;
+  margin-top: 22px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 20px;
+  color: $text-color-darkest;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-products__characteristic {
-  margin-top: 12px;
-  padding-left: 139px;
+  width: 140px;
+  margin-top: 8px;
 
   font-size: 12px;
   line-height: 16px;
@@ -100,6 +67,7 @@
 
 .main-products__characteristic-cell {
   width: 70px;
+  padding: 0;
 
   &:nth-child(2n) {
     text-align: right;
@@ -107,21 +75,25 @@
 }
 
 .main-products__button {
-  margin-top: 20px;
+  margin-top: -3px;
 }
 
 .main-products__show {
   display: block;
+  margin: 0 auto;
   padding-left: 3px;
 
   font-size: 16px;
   line-height: 20px;
+  color: $text-color-darkest;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-products__tastes {
   display: block;
+  margin: 0 auto;
   margin-top: 7px;
 
   font-size: 12px;
@@ -148,12 +120,11 @@
   }
 
   .main-products__item {
-    width: 248px;
+    width: 324px;
     margin-top: 142px;
     margin-right: 60px;
     margin-left: 0;
-    padding: 0 38px;
-    padding-top: 163px;
+    padding: 0;
     padding-bottom: 40px;
 
     background-color: $background-color-secondary;
@@ -166,42 +137,6 @@
       background-color: $background-color-primary;
     }
 
-    &::before {
-      width: 161px;
-      height: 172px;
-
-      top: -46px;
-      left: 80px;
-    }
-
-    &:nth-child(1)::before {
-      background-image: url("../img/chicken-small-tablet@1x.png");
-    }
-
-    &:nth-child(2)::before {
-      background-image: url("../img/chicken-big-tablet@1x.png");
-    }
-
-    &:nth-child(3)::before {
-      background-image: url("../img/fish-small-tablet@1x.png");
-    }
-
-    &:nth-child(4)::before {
-      background-image: url("../img/fish-big-tablet@1x.png");
-    }
-
-    &:nth-child(5)::before {
-      background-image: url("../img/buckwheat-small-tablet@1x.png");
-    }
-
-    &:nth-child(6)::before {
-      background-image: url("../img/buckwheat-big-tablet@1x.png");
-    }
-
-    &:nth-child(7)::before {
-      background-image: url("../img/rice-small-tablet@1x.png");
-    }
-
     &--more::before {
       top: 54px;
       left: 132px;
@@ -211,14 +146,16 @@
 
       background-image: url("../img/icon-plus.svg");
     }
+  }
 
-    &--large::before {
-      width: 195px;
-      height: 208px;
+  .main-products__image img {
+    width: 324px;
+    height: auto;
+  }
 
-      top: -83px;
-      left: 64px;
-    }
+  .main-products__flex-wrapper {
+    width: 324px;
+    padding: 0 38px;
   }
 
   .main-products__title {
@@ -233,7 +170,6 @@
   .main-products__characteristic {
     width: 100%;
     margin-top: 19px;
-    padding: 0;
 
     font-size: 16px;
 
