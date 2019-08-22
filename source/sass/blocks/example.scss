@@ -1,5 +1,6 @@
 .example {
-  min-height: 705px;
+  padding-top: 18px;
+  padding-bottom: 68px;
 
   color: $text-color-darkest;
 
@@ -11,23 +12,66 @@
 }
 
 .example__description {
+  width: 266px;
   margin: 0;
+  margin-top: 23px;
 
   font-family: $font-family-secondary;
   color: $text-color-dark;
 }
 
+.example__statistics {
+  margin-top: 22px;
+}
+
+.example__statistics tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__statistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+
+  &--nutrition {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
 .example__statistics-cell {
+  box-sizing: border-box;
+
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 
   &--indicator {
+    width: 84px;
+    margin-top: -9px;
+    margin-left: 18px;
+
     font-size: 12px;
     line-height: 12px;
     font-family: $font-family-secondary;
     color: $text-color-dark;
     text-transform: lowercase;
+
+    background-color: $background-color-secondary;
+    z-index: 2;
+  }
+
+  &--value {
+    width: 122px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    border: 1px solid $outline-color-secondary;
   }
 
   &--nutrition {
@@ -37,6 +81,20 @@
   }
 }
 
+.example__fat-cat {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.example__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
 .example__before,
 .example__after {
   font-size: 16px;
@@ -44,10 +102,31 @@
   text-transform: uppercase;
 }
 
+.example__toggle-bar {
+  position: relative;
+
+  width: 82px;
+  height: 12px;
+  margin-left: 10px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: $background-color-primary;
+}
+
+.example__toggle-control {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $decoration-element-color;
+}
+
 @media (min-width: $tablet-width) {
   .example {
-    min-height: 1040px;
-
     background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
   }
 
@@ -65,8 +144,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    min-height: 640px;
-
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }
 
