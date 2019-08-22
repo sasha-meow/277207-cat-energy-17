@@ -1,6 +1,6 @@
 .example {
   padding-top: 18px;
-  padding-bottom: 68px;
+  padding-bottom: 37px;
 
   color: $text-color-darkest;
 
@@ -280,6 +280,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    padding-top: 0;
+
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }
 
@@ -288,6 +290,44 @@
   }
 
   .example__title {
-    margin-top: 25px;
+    margin-top: 55px;
+  }
+
+  .example__description {
+    width: 431px;
+    margin-top: 146px;
+  }
+
+  .example__statistics {
+    margin-top: 66px;
+  }
+
+  .example__statistics-row {
+    &--nutrition {
+      flex-direction: row;
+      width: auto;
+      margin: 0;
+      margin-top: 53px;
+    }
+  }
+
+  .example__statistics-cell {
+    &--indicator {
+      background-color: $background-color-secondary;
+    }
+
+    &--nutrition:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  .example__fat-cat {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .example__controls {
+    margin-top: 40px;
+    margin-left: 109px;
   }
 }
