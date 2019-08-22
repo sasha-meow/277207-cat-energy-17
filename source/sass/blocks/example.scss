@@ -40,14 +40,16 @@
     justify-content: center;
     width: 100%;
     margin-top: 18px;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
   }
 }
 
 .example__statistics-cell {
   box-sizing: border-box;
 
-  font-size: 24px;
-  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
 
@@ -71,13 +73,10 @@
     padding-top: 14px;
     padding-bottom: 16px;
 
-    border: 1px solid $outline-color-secondary;
-  }
+    font-size: 24px;
+    line-height: 24px;
 
-  &--nutrition {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+    border: 1px solid $outline-color-secondary;
   }
 }
 
@@ -121,13 +120,16 @@
 
   width: 35px;
   height: 6px;
+  border: none;
   border-radius: 3px;
   background-color: $decoration-element-color;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
+    padding-bottom: 68px;
+
+    background: linear-gradient(to bottom, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary 100%);
   }
 
   .example__title {
@@ -143,7 +145,7 @@
   }
 
   .example__statistics {
-    margin-top: 37px;
+    margin-top: 50px;
   }
 
   .example__statistics tbody {
@@ -152,18 +154,23 @@
 
   .example__statistics-row {
     width: auto;
+    margin-right: 43px;
 
     &--nutrition {
-      width: 175px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 176px;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 122px;
+
+      font-size: 20px;
     }
   }
 
   .example__statistics-cell {
-    font-size: 30px;
-    line-height: 37px;
-
     &--indicator {
-      display: inline-block;
       width: auto;
       margin: 0 auto;
       margin-top: -9px;
@@ -179,6 +186,94 @@
     &--value {
       width: 160px;
       padding-bottom: 18px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--nutrition {
+      padding-bottom: 8px;
+
+      text-align: right;
+    }
+  }
+
+  .example__fat-cat {
+    width: 690px;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .example__controls {
+    width: 570px;
+    margin-top: 18px;
+  }
+
+  .example__before,
+  .example__after {
+    padding-bottom: 6px;
+
+    font-size: 20px;
+
+    border-bottom: 1px dotted $outline-color-secondary;
+
+    &:hover {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+
+  .example__toggle-bar {
+    width: 428px;
+    height: 6px;
+    margin-left: 0;
+    margin-top: 8px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .example__toggle-control {
+    top: -14px;
+    left: 202px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: $background-color-primary;
+
+    &:hover {
+      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $decoration-element-color;
+      box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &:active::before {
+      top: 11px;
+      left: 11px;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background-color: $decoration-element-color;
     }
   }
 }
