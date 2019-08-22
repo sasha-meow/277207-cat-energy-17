@@ -131,14 +131,55 @@
   }
 
   .example__title {
-    margin-top: 40px;
+    margin-top: 23px;
   }
 
   .example__description {
-    margin-top: 10px;
+    width: 676px;
+    margin-top: 65px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .example__statistics {
+    margin-top: 37px;
+  }
+
+  .example__statistics tbody {
+    justify-content: flex-start;
+  }
+
+  .example__statistics-row {
+    width: auto;
+
+    &--nutrition {
+      width: 175px;
+    }
+  }
+
+  .example__statistics-cell {
+    font-size: 30px;
+    line-height: 37px;
+
+    &--indicator {
+      display: inline-block;
+      width: auto;
+      margin: 0 auto;
+      margin-top: -9px;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: $background-color-primary;
+    }
+
+    &--value {
+      width: 160px;
+      padding-bottom: 18px;
+    }
   }
 }
 
