@@ -11,7 +11,8 @@
       <a href="index.html" class="page-header__logo logo">
         <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип Cat Energy">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--no-js">
+      <!-- main-nav--opened — меню открыто по умолчанию, иконка переключателя — крестик; main-nav--closed — меню закрыто по умолчанию, иконка переключателя — бургер; main-nav--no-js — меню открыто по умолчанию; main-nav__toggle--show — показывает переключатель, который по умолчанию скрыт, пока не работает JS -->
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <button class="main-nav__toggle" type="button" aria-label="Развернуть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -49,19 +50,19 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="profile__purpose">
+            <fieldset>
               <div class="profile__purpose">
                 <div class="profile__input-group">
-                  <input class="profile__radio-button" id="weight-loss" type="radio" name="purpose" value="weight-loss">
-                  <label class="profile__label" for="weight-loss">Похудение</label>
+                  <input class="profile__radio-button visually-hidden" id="weight-loss" type="radio" name="purpose" value="weight-loss" checked>
+                  <label class="profile__label profile__label--radio" for="weight-loss">Похудение</label>
                 </div>
                 <div class="profile__input-group">
-                  <input class="profile__radio-button" id="weight-gain" type="radio" name="purpose" value="weight-gain">
-                  <label class="profile__label" for="weight-gain">Набор массы</label>
+                  <input class="profile__radio-button visually-hidden" id="weight-gain" type="radio" name="purpose" value="weight-gain" tabindex="1">
+                  <label class="profile__label profile__label--radio" for="weight-gain">Набор массы</label>
                 </div>
                 <div class="profile__input-group">
-                  <input class="profile__radio-button" id="unknown" type="radio" name="purpose" value="unknown">
-                  <label class="profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+                  <input class="profile__radio-button visually-hidden" id="unknown" type="radio" name="purpose" value="unknown">
+                  <label class="profile__label profile__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
                 </div>
               </div>
             </fieldset>
