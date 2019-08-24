@@ -1,13 +1,60 @@
 .tertiary-title {
+  position: relative;
+
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $text-color-darkest;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 41px;
+    left: 248px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: $decoration-element-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .tertiary-title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 28px;
+      right: 710px;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: $decoration-element-color;
+    }
+
+    &::after {
+      top: 28px;
+      left: 410px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tertiary-title {
+    &::before {
+      top: 36px;
+      right: 1260px;
+    }
+
+    &::after {
+      top: 36px;
+      left: 373px;
+    }
   }
 }
