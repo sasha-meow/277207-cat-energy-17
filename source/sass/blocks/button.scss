@@ -55,6 +55,13 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    &--largest {
+      width: 283px;
+      height: 52px;
+
+      font-size: 20px;
+    }
   }
 }
 
@@ -64,6 +71,10 @@
 
     &--large {
       width: 245px;
+    }
+
+    &--largest {
+      width: 568px;
     }
   }
 }
