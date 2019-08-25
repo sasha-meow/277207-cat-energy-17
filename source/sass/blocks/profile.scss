@@ -43,17 +43,22 @@
 .profile__entry-field {
   flex-grow: 1;
   min-width: 0;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  padding-left: 13px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 14px;
 
   font-size: 16px;
   color: $text-color-darker;
   text-transform: uppercase;
 
-  border: 1px solid $outline-color-secondary;
+  border: none;
+  box-shadow: inset 0 0 0 1px $outline-color-secondary;
 
   &--textarea {
+    min-height: 150px;
+    padding: 10px 5px 10px 15px;
+    box-sizing: border-box;
+
     font-family: $font-family-primary;
     color: $text-color-dark;
     text-transform: uppercase;
@@ -65,6 +70,15 @@
     color: $text-color-dark;
     text-transform: uppercase;
     opacity: 1;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $outline-color-tertiary;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #444444;
   }
 }
 
@@ -110,6 +124,21 @@
       opacity: 1;
     }
   }
+
+  &--checkbox {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      width: 30px;
+      height: 30px;
+
+      box-shadow: inset 0 0 0 1px $outline-color-tertiary;
+    }
+  }
 }
 
 .profile__main {
@@ -139,18 +168,12 @@
   display: block;
 }
 
-.profile__radio-button:hover ~ .profile__label--radio::before,
-.profile__radio-button:checked:hover ~ .profile__label--radio::before {
+.profile__radio-button:hover ~ .profile__label--radio::before {
   border: 1px solid #bababa;
 }
 
-.profile__radio-button:focus ~ .profile__label--radio::before,
-.profile__radio-button:focus ~ .profile__label--radio::after {
+.profile__radio-button:focus ~ .profile__label--radio {
   opacity: 0.3;
-}
-
-.profile__contacts {
-
 }
 
 .profile__contacts-title {
@@ -159,32 +182,81 @@
 }
 
 .profile__contacts .profile__input-group {
+  position: relative;
+
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.profile__comment {
-  min-height: 245px;
+.profile__contacts .profile__label {
+  padding-right: 12px;
+}
+
+.profile__contacts-button {
+  position: absolute;
+  right: 12px;
+
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.profile__contacts-button:focus svg {
+  fill: $decoration-element-color;
 }
 
 .profile__comment-title {
-  padding-top: 16px;
+  margin-top: 28px;
+  margin-bottom: 35px;
 }
 
 .profile__additionally {
-  min-height: 240px;
+  padding-bottom: 20px;
 }
 
 .profile__additionally-title {
-  padding-top: 9px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.profile__additionally .profile__input-group {
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 46px;
+}
+
+.profile__checkbox:checked ~ .profile__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.profile__checkbox:hover ~ .profile__label--checkbox::before {
+  box-shadow: inset 0 0 0 1px #bababa;
+}
+
+.profile__checkbox:focus ~ .profile__label--checkbox {
+  opacity: 0.3;
 }
 
 .profile__submit {
   margin: 0;
-  min-height: 126px;
+  padding-top: 10px;
+  padding-bottom: 33px;
+
+  text-align: center;
 }
 
 .profile__note {
+  display: block;
+  margin-top: 21px;
+
   line-height: 16px;
   font-family: $font-family-secondary;
   color: $text-color-dark;
