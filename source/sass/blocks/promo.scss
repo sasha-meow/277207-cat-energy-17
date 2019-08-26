@@ -6,6 +6,7 @@
   padding-bottom: 20px;
 
   color: $text-color-light;
+<<<<<<< HEAD
 
   &::before {
     content: "";
@@ -28,6 +29,8 @@
   background-repeat: no-repeat;
   background-position: center 73%;
   background-size: 280px;
+=======
+>>>>>>> Вносит правки по переполнению в блоках page-header и promo
 }
 
 .promo__slogan {
@@ -51,6 +54,7 @@
     padding-bottom: 530px;
 
     background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
     background-size: 630px;
     background-position: 80% 100%;
 
@@ -84,6 +88,7 @@
   }
 
   .promo__slogan {
+    max-width: 430px;
     margin-left: 80px;
   }
 
