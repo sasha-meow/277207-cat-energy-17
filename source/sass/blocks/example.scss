@@ -21,6 +21,7 @@
 }
 
 .example__statistics {
+  width: 280px;
   margin-top: 22px;
 }
 
@@ -34,6 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+  align-items: center;
 
   &--nutrition {
     flex-direction: row;
@@ -48,6 +50,7 @@
 }
 
 .example__statistics-cell {
+  display: inline-block;
   box-sizing: border-box;
 
   text-transform: uppercase;
@@ -56,7 +59,6 @@
   &--indicator {
     width: 84px;
     margin-top: -9px;
-    margin-left: 18px;
 
     font-size: 12px;
     line-height: 12px;
@@ -145,6 +147,7 @@
   }
 
   .example__statistics {
+    width: inherit;
     margin-top: 50px;
   }
 
@@ -300,7 +303,12 @@
   }
 
   .example__statistics {
+    width: 431px;
     margin-top: 66px;
+  }
+
+  .example__statistics tbody {
+    width: inherit;
   }
 
   .example__statistics-row {
@@ -324,11 +332,11 @@
 
   .example__fat-cat {
     margin-top: 0px;
-    margin-left: 30px;
+    margin-left: 135px;
   }
 
   .example__controls {
     margin-top: 40px;
-    margin-left: 109px;
+    margin-left: 213px;
   }
 }
