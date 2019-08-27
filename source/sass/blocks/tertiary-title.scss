@@ -6,18 +6,18 @@
   line-height: 24px;
   color: $text-color-darkest;
 
-  &::after {
-    content: "";
+  // &::after {
+  //   content: "";
 
-    position: absolute;
-    top: 41px;
-    left: 248px;
+  //   position: absolute;
+  //   top: 41px;
+  //   left: 248px;
 
-    width: 100%;
-    height: 3px;
+  //   width: 100%;
+  //   height: 3px;
 
-    background-color: $decoration-element-color;
-  }
+  //   background-color: $decoration-element-color;
+  // }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,36 +25,63 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::before {
-      content: "";
+    // &::before {
+    //   content: "";
 
-      position: absolute;
-      top: 28px;
-      right: 710px;
+    //   position: absolute;
+    //   top: 28px;
+    //   right: 710px;
 
-      width: 100%;
-      height: 3px;
+    //   width: 100%;
+    //   height: 3px;
 
-      background-color: $decoration-element-color;
-    }
+    //   background-color: $decoration-element-color;
+    // }
 
-    &::after {
-      top: 28px;
-      left: 410px;
-    }
+    // &::after {
+    //   top: 28px;
+    //   left: 410px;
+    // }
   }
 }
 
 @media (min-width: $desktop-width) {
   .tertiary-title {
-    &::before {
-      top: 36px;
-      right: 1260px;
-    }
+    // &::before {
+    //   top: 36px;
+    //   right: 1260px;
+    // }
 
-    &::after {
-      top: 36px;
-      left: 373px;
-    }
+    // &::after {
+    //   top: 36px;
+    //   left: 373px;
+    // }
+  }
+}
+
+.tertiary-title {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+   content: "";
+   position: absolute;
+   left: -100vw;
+   top: calc(50% - 1px);
+   width: calc(100vw - 30px);
+   height: 2px;
+
+   background-color: red;
+  }
+
+  &::after {
+   content: "";
+   position: absolute;
+   left: calc(100vw - 1440px);
+   top: calc(50% - 1px);
+   width: calc(100vw - 30px);
+   height: 2px;
+
+   background-color: red;
   }
 }
