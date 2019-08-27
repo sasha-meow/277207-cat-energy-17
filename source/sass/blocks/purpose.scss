@@ -5,7 +5,8 @@
 }
 
 .purpose__variants {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -128,6 +129,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .purpose__variants {
+    width: 708px;
+  }
+
   .purpose__item {
     width: 604px;
     padding: 60px 52px;
@@ -207,10 +212,12 @@
   .purpose__variants {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
   }
 
   .purpose__item {
     width: 570px;
+    box-sizing: border-box;
 
     &:first-child {
       margin-right: 80px;
@@ -253,12 +260,12 @@
 
 
   .purpose__description {
-    width: auto;
+    width: 463px;
     margin-top: 65px;
   }
 
   .purpose__item--pro .purpose__description {
-    width: auto;
+    width: 463px;
   }
 
   .purpose__link {

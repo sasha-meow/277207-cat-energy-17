@@ -15,9 +15,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-right: -20px;
-  margin-left: -20px;
-  padding: 0 20px 24px 20px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid $outline-color-primary;
 
@@ -32,10 +30,11 @@
 
     position: absolute;
     top: 26px;
-    left: 145px;
+    left: 50%;
 
     width: 31px;
     height: 31px;
+    margin-left: -15px;
 
     background-image: url("../img/icon-plus-mobile.svg");
     opacity: 0.2;
@@ -75,6 +74,7 @@
 }
 
 .main-products__button {
+  width: 100%;
   margin-top: -3px;
 }
 
@@ -93,6 +93,7 @@
 
 .main-products__tastes {
   display: block;
+  width: 100%;
   margin: 0 auto;
   margin-top: 7px;
 
@@ -104,6 +105,7 @@
 }
 
 .main-products__all {
+  margin: 0 auto;
   margin-top: 22px;
 }
 
