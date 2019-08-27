@@ -1,15 +1,14 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
-navToggle.classList.add('main-nav__toggle--show');
+if (navMain) {
+  navMain.classList.remove('main-nav--nojs');
+}
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
+if (navToggle) {
+  navToggle.classList.add('main-nav__toggle--show');
+  navToggle.addEventListener('click', function() {
+    navMain.classList.toggle('main-nav--closed');
+    navMain.classList.toggle('main-nav--opened')
+  });
+}

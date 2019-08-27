@@ -72,6 +72,8 @@
   }
 
   .work-process__list {
+    counter-reset: background-number;
+
     display: flex;
     flex-wrap: wrap;
     margin-top: 28px;
@@ -97,6 +99,9 @@
     }
 
     &::after {
+      counter-increment: background-number;
+      content: counter(background-number) " ";
+
       position: absolute;
       top: -38px;
       left: 113px;
@@ -107,28 +112,6 @@
       font-family: $font-family-primary;
       color: $background-color-secondary;
     }
-
-    &:nth-child(1)::after {
-      content: "1";
-
-      left: 118px;
-    }
-
-    &:nth-child(2)::after {
-      content: "2";
-    }
-
-    &:nth-child(3)::after {
-      content: "3";
-    }
-
-    &:nth-child(4)::after {
-      content: "4";
-    }
-  }
-
-  .work-process__item br {
-    display: block;
   }
 }
 
