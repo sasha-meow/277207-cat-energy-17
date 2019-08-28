@@ -11,7 +11,7 @@
   padding-top: 30px;
   padding-bottom: 34px;
 
-  border-bottom: 1px solid $outline-color;
+  border-bottom: 1px solid $outline-color-secondary;
 }
 
 .additional-products__list {
@@ -22,7 +22,7 @@
   display: flex;
   min-height: 127px;
 
-  border-bottom: 1px solid $outline-color;
+  border-bottom: 1px solid $outline-color-secondary;
 }
 
 .additional-products__cell {
@@ -60,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-products__title {
-    padding-top: 8px;
+    padding-top: 0;
     padding-bottom: 81px;
     padding-left: 38px;
 
@@ -70,7 +70,7 @@
   .additional-products__table-group {
     min-height: 137px;
 
-    border: 1px solid $outline-color;
+    border: 1px solid $outline-color-secondary;
   }
 
   .additional-products__present {

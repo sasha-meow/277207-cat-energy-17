@@ -1,19 +1,96 @@
 .main-nav {
-  display: none;
-  min-height: 199px;
+  position: relative;
 }
 
 .main-nav__toggle {
+  display: none;
+  position: absolute;
+  top: -43px;
+  right: 0;
+
+  width: 25px;
+  height: 19px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  // Показывает переключатель, который по умолчанию скрыт, пока не работает JS
+  &--show {
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: $text-color-darker;
+    box-shadow: 0 8px 0 0 $text-color-darker, 0 16px 0 0 $text-color-darker;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: $text-color-darker;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__list {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
-    min-height: 120px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 440px;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 478px;
   }
 }

@@ -1,56 +1,74 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  min-height: 65px;
 
   color: $text-color-darkest;
 
-  background-color: $background-color-primary;
+  border-bottom: 1px solid $outline-color-primary;
 
-  &--regular {
-    display: flex;
-
-    border-bottom: 1px solid $outline-color;
+  &--main {
+    border-bottom: none;
   }
 }
 
-.page-header__navigation-wrapper {
-  display: flex;
-}
-
 .page-header__logo {
-  width: 280px;
-  height: 65px;
-  padding: 0 20px;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 15px;
 }
 
 .page-header__title {
-  display: none;
+  padding-top: 27px;
+  z-index: 1;
+
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    min-height: 90px;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: none;
 
     // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
     &--main {
       flex-direction: column;
-      min-height: 950px;
+
+      background-repeat: no-repeat;
+      background-position: 0 80px;
     }
+  }
+
+  .page-header__navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    padding: 0;
+  }
+
+  .page-header__title {
+    padding-top: 30px;
+    padding-left: 116px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    min-height: 120px;
+    padding-top: 30px;
 
     &--main {
-      min-height: 776px;
-
-      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-position: 63% 71%, 100% 0;
     }
+  }
+
+  .page-header__title {
+    padding-top: 82px;
+    padding-left: 120px;
   }
 }

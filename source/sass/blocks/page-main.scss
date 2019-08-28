@@ -1,17 +1,20 @@
 .page-main__title {
-  min-height: 48px;
   margin-top: 25px;
 
   &--outline {
-    border-bottom: 1px solid $outline-color;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid $outline-color-primary;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    margin-top: 20px;
+    margin-top: 30px;
 
     &--outline {
+      padding-bottom: 0;
+
       border-bottom: none;
     }
   }
@@ -19,6 +22,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-top: 70px;
+    margin-top: 48px;
   }
 }

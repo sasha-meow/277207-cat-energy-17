@@ -1,4 +1,12 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 20px;
   font-family: $font-family-primary;
   color: $text-color-light;
   text-transform: uppercase;
@@ -7,8 +15,54 @@
   background-color: $button-color-primary;
 
   &--light {
-    color: $text-color-darkest;
+    color: $text-color-dark;
 
     background-color: $button-color-secondary;
+  }
+
+  &--large {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--light:hover {
+    background-color: #ebebeb;
+  }
+
+  &--light:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 249px;
+    height: 40px;
+
+    &--large {
+      width: 245px;
+      height: 52px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 169px;
+
+    &--large {
+      width: 245px;
+    }
   }
 }
