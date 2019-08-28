@@ -100,9 +100,10 @@
 
 @media (min-width: $tablet-width) {
   .additional-products__title {
+    margin-bottom: 65px;;
     padding-top: 6px;
-    padding-bottom: 81px;
-    padding-left: 37px;
+    padding-bottom: 16px;
+    margin-left: 37px;
 
     border-bottom: none;
   }
@@ -178,10 +179,12 @@
   }
 
   .additional-products__title {
-    width: 100%;
+    width: auto;
+    margin: 0;
+    margin-bottom: 54px;
     padding-top: 15px;
     padding-left: 0;
-    padding-bottom: 79px;
+    padding-bottom: 25px;
   }
 
   .additional-products__list {
