@@ -86,7 +86,7 @@
 
 .purpose__description {
   margin: 0;
-  margin-top: 19px;
+  margin-top: 20px;
   padding-bottom: 21px;
 
   font-family: $font-family-secondary;
@@ -100,7 +100,7 @@
 
   display: inline-block;
   margin-top: 20px;
-  padding-right: 40px;
+  padding-right: 60px;
 
   font-size: 16px;
   line-height: 16px;
@@ -109,22 +109,18 @@
   text-decoration: none;
   vertical-align: middle;
 
-  &:focus {
-    color: rgba(17, 17, 17, 0.3);
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 12px;
+  background-position: 95px;
+
+  &:hover {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 34px 12px;
   }
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 2px;
-    right: 4px;
-
-    width: 25px;
-    height: 12px;
-
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -197,10 +193,11 @@
     font-size: 20px;
     line-height: 20px;
 
-    &::after {
-      top: 4px;
-      right: -10px;
-    }
+    background-position: 131px 3px;
+  }
+
+  .purpose__item--pro .purpose__link {
+    background-position: 126px 4px;
   }
 }
 

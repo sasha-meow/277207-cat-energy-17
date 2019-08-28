@@ -178,6 +178,10 @@
   opacity: 0.3;
 }
 
+.profile__radio-button:disabled ~ .profile__label--radio {
+  color: rgb(161, 132, 132);
+}
+
 .profile__contacts-title {
   margin-top: 28px;
   margin-bottom: 35px;
@@ -244,6 +248,14 @@
 }
 
 .profile__checkbox:focus ~ .profile__label--checkbox {
+  opacity: 0.3;
+}
+
+.profile__checkbox:disabled ~ .profile__label--checkbox {
+  color: rgb(161, 132, 132);
+}
+
+.profile__checkbox:disabled ~ .profile__label--checkbox::before {
   opacity: 0.3;
 }
 
