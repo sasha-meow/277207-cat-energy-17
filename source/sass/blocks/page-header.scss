@@ -17,13 +17,6 @@
   margin-bottom: 15px;
 }
 
-.page-header__background-wrapper {
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 72%, top;
-  background-size: 280px, 100% 51%;
-}
-
 .page-header__title {
   padding-top: 27px;
   z-index: 1;
@@ -55,10 +48,6 @@
 
   .page-header__logo {
     padding: 0;
-  }
-
-  .page-header__background-wrapper {
-    background-image: none;
   }
 
   .page-header__title {

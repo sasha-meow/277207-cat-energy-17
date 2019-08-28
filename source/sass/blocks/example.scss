@@ -7,6 +7,11 @@
   background-color: $background-color-secondary;
 }
 
+.example__information {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__title {
   margin: 0;
 }
@@ -132,6 +137,10 @@
     padding-bottom: 68px;
 
     background: linear-gradient(to bottom, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary 100%);
+  }
+
+  .example__information {
+    width: 708px;
   }
 
   .example__title {

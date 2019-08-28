@@ -16,7 +16,8 @@
 
 .additional-products__list {
   display: flex;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .additional-products__list tbody {
@@ -62,6 +63,7 @@
   position: relative;
 
   width: 280px;
+  margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 35px;
 
@@ -106,6 +108,8 @@
   }
 
   .additional-products__list {
+    width: 708px;
+
     border: 1px solid $outline-color-secondary;
   }
 
@@ -182,6 +186,7 @@
 
   .additional-products__list {
     width: 895px;
+    margin: 0;
     margin-bottom: 87px;
 
     border: none;
@@ -231,7 +236,7 @@
 
   .additional-products__present {
     width: 245px;
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 87px;
 
     &::before {
