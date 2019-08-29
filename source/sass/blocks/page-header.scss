@@ -25,7 +25,7 @@
 }
 
 // span нужен для ограничения ширины, потому что сам заголовок — контейнер.
-.page-header__title span {
+.page-header__title-add {
   display: inline-block;
   max-width: 249px;
 
@@ -63,7 +63,7 @@
     padding-left: 116px;
   }
 
-  .page-header__title span {
+  .page-header__title-add {
     max-width: 430px;
   }
 }

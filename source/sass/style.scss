@@ -1,3 +1,4 @@
+@import "../css/normalize.css";
 @import "utils/fonts.scss";
 @import "utils/variables.scss";
 @import "blocks/additional-products.scss";
@@ -27,7 +28,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
