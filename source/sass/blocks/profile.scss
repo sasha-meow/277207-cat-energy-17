@@ -80,7 +80,11 @@
 
   &:focus {
     outline: none;
-    box-shadow: inset 0 0 0 2px #444444;
+    box-shadow: inset 0 0 0 2px $form-hover-color;
+  }
+
+  &:focus:invalid {
+    box-shadow: inset 0 0 0 2px $form-error-color;
   }
 }
 
@@ -215,6 +219,10 @@
 
 .profile__contacts-button:focus .profile__contacts-icon {
   fill: $decoration-element-color;
+}
+
+.profile__entry-field:focus:invalid + .profile__contacts-button .profile__contacts-icon {
+  fill: $form-error-color;
 }
 
 .profile__comment-title {
