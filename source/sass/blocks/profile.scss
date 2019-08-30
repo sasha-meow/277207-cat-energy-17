@@ -213,7 +213,7 @@
   background-color: transparent;
 }
 
-.profile__contacts-button:focus svg {
+.profile__contacts-button:focus .profile__contacts-icon {
   fill: $decoration-element-color;
 }
 
@@ -243,7 +243,7 @@
 }
 
 .profile__checkbox:checked ~ .profile__label--checkbox::before {
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/tick-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
