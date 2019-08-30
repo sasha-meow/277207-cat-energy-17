@@ -206,14 +206,17 @@
   }
 
   .example__cat-slider {
-    width: 768px;
+    width: 100%;
+    margin: 0;
     margin-top: 80px;
-    padding-left: 46px;
+    padding: 0;
   }
 
   .example__fat-cat {
+    display: block;
     width: 690px;
     height: 517px;
+    margin: 0 auto;
   }
 
   .example__controls {
@@ -300,8 +303,6 @@
 
   .example__flex-wrapper {
     display: flex;
-    width: 1220px;
-    margin: 0 auto;
   }
 
   .example__title {
@@ -315,6 +316,7 @@
 
   .example__statistics {
     width: 431px;
+    margin: 0;
     margin-top: 66px;
   }
 
@@ -327,7 +329,7 @@
       flex-direction: row;
       width: auto;
       margin: 0;
-      margin-top: 53px;
+      margin-top: 51px;
     }
   }
 
@@ -342,14 +344,21 @@
   }
 
   .example__cat-slider {
-    min-width: 790px;
+    max-width: 790px;
     margin-top: 0px;
-    margin-left: 95px;
+    margin-left: 20px;
     padding: 0;
   }
 
+  .example__fat-cat {
+    min-width: 690px;
+    height: 517px;
+    margin-left: -5px;
+    margin-right: -40px;
+  }
+
   .example__controls {
-    margin-top: 37px;
-    margin-left: 79px;
+    margin-top: 39px;
+    margin-left: 75px;
   }
 }
