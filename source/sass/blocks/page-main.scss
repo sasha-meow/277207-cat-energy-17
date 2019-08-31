@@ -3,7 +3,10 @@
   margin-top: 26px;
 
   &--outline {
+    margin-right: -20px;
+    margin-left: -20px;
     padding-bottom: 40px;
+    padding-left: 20px;
 
     border-bottom: 1px solid $outline-color-primary;
   }
@@ -12,10 +15,15 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     margin-top: 30px;
-    margin-left: 88px;
+
+    &--main {
+      margin-left: 88px;
+    }
 
     &--outline {
-      padding-bottom: 0;
+      margin: 0;
+      margin-top: 30px;
+      padding: 0;
 
       border-bottom: none;
     }
@@ -24,7 +32,11 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-top: 85px;
-    margin-left: 80px;
+    margin-top: 50px;
+
+    &--main {
+      margin-top: 85px;
+      margin-left: 80px;
+    }
   }
 }
