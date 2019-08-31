@@ -1,5 +1,6 @@
 .work-process {
-  width: 320px;
+  max-width: 280px;
+  margin: 0 auto;
   margin-top: 17px;
 }
 
@@ -9,7 +10,7 @@
 
 .work-process__list {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-bottom: 40px;
   padding: 0;
 
@@ -61,10 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .work-process {
-    width: 768px;
+    max-width: 708px;
     margin-top: 47px;
-
-    border-bottom: 1px solid $outline-color-primary;
   }
 
   .work-process__list {
@@ -74,7 +73,7 @@
     flex-wrap: wrap;
     max-width: 768px;
     margin-top: 28px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   .work-process__item {
@@ -117,7 +116,7 @@
 
 @media (min-width: $desktop-width) {
   .work-process {
-    width: 1300px;
+    max-width: 1300px;
     margin-top: 75px;
 
     border: none;

@@ -17,72 +17,46 @@
   margin-bottom: 15px;
 }
 
-.page-header__title {
-  padding-top: 27px;
-  z-index: 1;
-
-  text-align: center;
-}
-
-// span нужен для ограничения ширины, потому что сам заголовок — контейнер.
-.page-header__title-add {
-  display: inline-block;
-  max-width: 249px;
-
-  vertical-align: middle;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
-
-    // Меняет направление, потому что в случае с главной в хедер входит и раздел promo.
-    &--main {
-      flex-direction: column;
-    }
-  }
-
-  .page-header__navigation-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .page-header__logo {
     padding: 0;
   }
-
-  .page-header__title {
-    padding-top: 30px;
-    padding-left: 116px;
-  }
-
-  .page-header__title-add {
-    max-width: 430px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
     padding-top: 30px;
 
     &--main {
-      background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 66% 71%, 100% 0;
-      background-size: 552px 499px, 50vw 100%;
+      &::after {
+        content: "";
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+
+        width: 50vw;
+        min-height: 696px;
+
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: cover;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
+
       }
     }
-  }
-
-  .page-header__title {
-    padding-top: 82px;
-    padding-left: 120px;
   }
 }

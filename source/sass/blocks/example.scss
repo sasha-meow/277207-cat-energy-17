@@ -7,14 +7,17 @@
   background-color: $background-color-secondary;
 }
 
-.example__title {
+.example__information {
   width: 280px;
   margin: 0 auto;
 }
 
+.example__title {
+  margin: 0;
+}
+
 .example__description {
   width: 266px;
-  margin: 0 auto;
   margin-top: 23px;
 
   font-family: $font-family-secondary;
@@ -23,7 +26,6 @@
 
 .example__statistics {
   width: 280px;
-  margin: 0 auto;
   margin-top: 22px;
 }
 
@@ -43,7 +45,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 16px;
 
     font-size: 14px;
     line-height: 20px;
@@ -90,12 +92,19 @@
   margin-top: 30px;
 }
 
+.example__fat-cat {
+  display: block;
+  width: 320px;
+  height: auto;
+}
+
 .example__controls {
   display: flex;
   justify-content: space-between;
-  width: 198px;
+  max-width: 198px;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 33px;
+  padding-left: 5px;
 }
 
 .example__before,
@@ -110,7 +119,7 @@
 
   width: 82px;
   height: 12px;
-  margin-left: 10px;
+  margin-top: 4px;
 
   border-radius: 6px;
   border: solid 1px #cdcdcd;
@@ -120,7 +129,7 @@
 .example__toggle-control {
   position: absolute;
   top: 3px;
-  left: 3px;
+  left: 5px;
 
   width: 35px;
   height: 6px;
@@ -133,11 +142,15 @@
   .example {
     padding-bottom: 68px;
 
+    border-top: 1px solid $outline-color-primary;
     background: linear-gradient(to bottom, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary 100%);
   }
 
+  .example__information {
+    width: 708px;
+  }
+
   .example__title {
-    width: auto;
     margin-top: 23px;
   }
 
@@ -152,7 +165,7 @@
 
   .example__statistics {
     width: inherit;
-    margin-top: 50px;
+    margin-top: 51px;
   }
 
   .example__statistics tbody {
@@ -206,22 +219,20 @@
   }
 
   .example__cat-slider {
-    width: 100%;
-    margin: 0;
+    width: 768px;
     margin-top: 80px;
-    padding: 0;
   }
 
   .example__fat-cat {
-    display: block;
     width: 690px;
-    height: 517px;
-    margin: 0 auto;
+    height: auto;
+    margin-left: 45px;
   }
 
   .example__controls {
-    width: 570px;
+    max-width: 570px;
     margin-top: 18px;
+    padding: 0;
   }
 
   .example__before,
@@ -253,7 +264,7 @@
 
   .example__toggle-control {
     top: -14px;
-    left: 202px;
+    left: 200px;
 
     width: 34px;
     height: 34px;
@@ -298,11 +309,19 @@
     padding-top: 0;
     padding-bottom: 66px;
 
+    border: none;
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }
 
-  .example__flex-wrapper {
+  .example__desktop-wrapper {
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .example__information {
+    width: 500px;
+    margin: 0;
   }
 
   .example__title {
@@ -329,7 +348,7 @@
       flex-direction: row;
       width: auto;
       margin: 0;
-      margin-top: 51px;
+      margin-top: 52px;
     }
   }
 
@@ -345,20 +364,18 @@
 
   .example__cat-slider {
     max-width: 790px;
-    margin-top: 0px;
-    margin-left: 20px;
+    margin-top: 0;
     padding: 0;
   }
 
   .example__fat-cat {
     min-width: 690px;
     height: 517px;
-    margin-left: -5px;
-    margin-right: -40px;
+    margin: 0;
   }
 
   .example__controls {
     margin-top: 39px;
-    margin-left: 75px;
+    margin-left: 80px;
   }
 }

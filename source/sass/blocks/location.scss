@@ -62,7 +62,7 @@
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -105,6 +105,7 @@
     height: 400px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: center;
 
     &::before {
       top: 37.5%;
@@ -128,7 +129,7 @@
   .location__address-wrapper {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
     z-index: 2;
 
     width: 530px;
@@ -147,11 +148,10 @@
     z-index: 1;
 
     background-image: url("../img/bg-map-desktop@1x.png");
-    background-position: 0 0;
 
     &::before {
       top: 37.8%;
-      left: 77.2%;
+      left: 71.2%;
 
       width: 113px;
       height: 106px;

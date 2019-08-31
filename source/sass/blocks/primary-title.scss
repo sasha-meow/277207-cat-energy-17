@@ -5,6 +5,8 @@
   color: $text-color-darkest;
 
   &--main {
+    max-width: 250px;
+
     color: $text-color-light;
     text-align: center;
   }
@@ -16,8 +18,18 @@
     line-height: 60px;
 
     &--main {
+      max-width: 415px;
+
       color: $text-color-darkest;
       text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .primary-title {
+    &--main {
+      max-width: 415px;
     }
   }
 }

@@ -1,5 +1,6 @@
 .page-main__title {
-  margin-top: 25px;
+  margin: 0 auto;
+  margin-top: 26px;
 
   &--outline {
     padding-bottom: 40px;
@@ -11,6 +12,7 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     margin-top: 30px;
+    margin-left: 88px;
 
     &--outline {
       padding-bottom: 0;
@@ -22,6 +24,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-top: 48px;
+    margin-top: 85px;
+    margin-left: 80px;
   }
 }
