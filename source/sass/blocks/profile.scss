@@ -99,7 +99,8 @@
   }
 }
 
-.profile__label {
+.profile__label{
+  max-width: 85px;
   padding-right: 16px;
 
   font-size: 16px;
@@ -168,6 +169,10 @@
   margin-top: 13px;
 }
 
+.profile__main .profile__label--age {
+  padding-right: 22px;
+}
+
 .profile__purpose {
   position: relative;
   align-items: center;
@@ -201,7 +206,7 @@
 .profile__contacts-title {
   width: 182px;
   margin-top: 11px;
-  margin-bottom: 34px;
+  margin-bottom: 21px;
   padding-top: 16px;
 }
 
@@ -209,7 +214,7 @@
   position: relative;
 
   justify-content: space-between;
-  margin-top: 13px;
+  padding-top: 13px;
 }
 
 .profile__contacts .profile__label {
@@ -218,6 +223,7 @@
 
 .profile__contacts-button {
   position: absolute;
+  top: 27px;
   right: 12px;
 
   width: 22px;
@@ -333,9 +339,11 @@
   }
 
   .profile__entry-field {
+    min-height: 52px;
     padding-top: 11px;
     padding-bottom: 13px;
     padding-left: 20px;
+    box-sizing: border-box;
 
     font-size: 20px;
     line-height: 20px;
@@ -392,11 +400,12 @@
 
   .profile__main {
     margin-top: 16px;
+    margin-bottom: 22px;
     padding-bottom: 47px;
   }
 
   .profile__main .profile__input-group {
-    margin-top: 18px;
+    margin-top: 19px;
   }
 
   .profile__purpose {
@@ -413,13 +422,17 @@
   .profile__contacts-title {
     width: 517px;
     margin-top: 75px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     padding-top: 0;
     padding-bottom: 10px;
   }
 
   .profile__contacts .profile__input-group {
-    margin-top: 18px;
+    margin-top: 7px;
+
+    &::first-child {
+      margin-top: 0;
+    }
   }
 
   .profile__contacts .profile__label--email {
@@ -427,7 +440,7 @@
   }
 
   .profile__contacts-button {
-    top: 18px;
+    top: 31px;
     right: 15px;
   }
 
@@ -539,7 +552,7 @@
 
   .profile__contacts-title {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 
   .profile__contacts-wrapper {
@@ -568,7 +581,7 @@
   }
 
   .profile__additionally-title {
-    margin-top: 67px;
+    margin-top: 66px;
   }
 
   .profile__additionally .profile__input-group {

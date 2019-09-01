@@ -10,7 +10,6 @@
 
 .location__address-wrapper {
   display: flex;
-  justify-content: space-between;
   padding-top: 27px;
   padding-bottom: 24px;
 }
@@ -29,6 +28,7 @@
   z-index: 4;
 
   width: 138px;
+  margin-left: auto;
 
   font-size: 14px;
   font-style: normal;

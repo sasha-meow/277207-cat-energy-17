@@ -17,7 +17,7 @@
 }
 
 .example__description {
-  width: 266px;
+  width: 272px;
   margin-top: 23px;
 
   font-family: $font-family-secondary;
@@ -33,6 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 280px;
 }
 
 .example__statistics-row {
@@ -169,6 +170,7 @@
   }
 
   .example__statistics tbody {
+    min-width: 708px;
     justify-content: flex-start;
   }
 
@@ -317,6 +319,11 @@
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  // IE не подстраивает размер контейнера
+  .example .container {
+    width: 690px;
   }
 
   .example__information {
