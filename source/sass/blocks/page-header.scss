@@ -1,5 +1,6 @@
 .page-header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   color: $text-color-darkest;
@@ -9,6 +10,12 @@
   &--main {
     border-bottom: none;
   }
+}
+
+.page-header--main .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .page-header__logo {
@@ -23,6 +30,12 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
+  }
+
+  .page-header--main .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .page-header__logo {
@@ -44,7 +57,7 @@
         left: 50%;
         z-index: -1;
 
-        width: 50vw;
+        width: 50%;
         min-height: 696px;
 
         background-image: url("../img/index-background-desktop@1x.jpg");
@@ -55,7 +68,6 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/index-background-desktop@2x.jpg");
         }
-
       }
     }
   }

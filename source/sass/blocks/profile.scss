@@ -1,5 +1,4 @@
 .profile {
-  width: 320px;
   padding-top: 15px;
 
   color: $text-color-darkest;
@@ -9,22 +8,34 @@
 
 .profile__description {
   width: 226px;
-  margin: 0;
   margin-top: 23px;
 
   color: $text-color-darkest;
   text-transform: uppercase;
 }
 
-.profile fieldset {
+.profile .profile__group-wrapper {
+  width: 280px;
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-block-start: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
   padding-block-end: 0;
-
+  margin: 0 auto;
   border: none;
+
+  &--bordered {
+    width: 100%;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    border: none;
+    border-top: 1px solid $outline-color-primary;
+    border-bottom: 1px solid $outline-color-primary;
+  }
 }
 
 .profile legend {
@@ -44,8 +55,8 @@
 .profile__entry-field {
   flex-grow: 1;
   min-width: 0;
-  padding-top: 11px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   padding-left: 14px;
 
   font-size: 16px;
@@ -148,21 +159,22 @@
 }
 
 .profile__main {
-  padding-top: 25px;
-  padding-bottom: 23px;
+  margin-bottom: 24px;
+  padding-top: 10px;
 }
 
 .profile__main .profile__input-group {
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .profile__purpose {
+  position: relative;
   align-items: center;
-  margin: 0 -20px;
-  padding: 14px 20px 13px;
-
-  border: 1px solid $outline-color-secondary;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
 
 .profile__purpose .profile__input-group {
@@ -188,8 +200,8 @@
 
 .profile__contacts-title {
   width: 182px;
-  margin-top: 12px;
-  margin-bottom: 35px;
+  margin-top: 11px;
+  margin-bottom: 34px;
   padding-top: 16px;
 }
 
@@ -197,7 +209,7 @@
   position: relative;
 
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .profile__contacts .profile__label {
@@ -274,8 +286,9 @@
 }
 
 .profile__submit {
-  margin: 0;
-  padding-top: 10px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 9px;
   padding-bottom: 33px;
 
   text-align: center;
@@ -283,7 +296,7 @@
 
 .profile__note {
   display: block;
-  margin-top: 21px;
+  margin-top: 22px;
 
   line-height: 16px;
   font-family: $font-family-secondary;
@@ -292,17 +305,27 @@
 
 @media (min-width: $tablet-width) {
   .profile {
-    width: 768px;
-    padding-right: 67px;
-    padding-left: 71px;
+    padding: 0 40px;
   }
 
   .profile__description {
     width: 323px;
-    margin-top: 39px;
+    margin-top: 57px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .profile .profile__group-wrapper {
+    width: 630px;
+
+    &--bordered {
+      width: 628px;
+      margin: 0 auto;
+      padding: 0;
+
+      border: 1px solid $outline-color-primary;
+    }
   }
 
   .profile__input-group {
@@ -361,11 +384,15 @@
         height: 40px;
       }
     }
+
+    &--weight {
+      padding-right: 20px;
+    }
   }
 
   .profile__main {
-    margin-top: 23px;
-    padding-bottom: 70px;
+    margin-top: 16px;
+    padding-bottom: 47px;
   }
 
   .profile__main .profile__input-group {
@@ -438,7 +465,8 @@
 
   .profile__submit {
     display: flex;
-    padding-bottom: 72px;
+    width: 630px;
+    padding-bottom: 73px;
   }
 
   .profile__button {
@@ -453,14 +481,29 @@
 
 @media (min-width: $desktop-width) {
   .profile {
-    width: 1300px;
-    padding: 0 40px;
+    padding: 0;
     padding-top: 15px;
   }
 
   .profile__flex-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .profile__description {
+    margin-top: 40px;
+  }
+
+  .profile .profile__group-wrapper {
+    margin: 0;
+
+    &--bordered {
+      width: 570px;
+      margin: 0;
+      padding: 0;
+
+      border: none;
+    }
   }
 
   .profile__entry-field {
@@ -473,15 +516,10 @@
     }
   }
 
-  .profile__label {
-    &--weight {
-      padding-right: 20px;
-    }
-  }
-
   .profile__main {
-    min-width: 570px;
-    padding-top: 27px;
+    width: 568px;
+    margin: 0;
+    padding-top: 28px;
     padding-bottom: 40px;
   }
 
@@ -493,12 +531,14 @@
   .profile__purpose {
     width: 570px;
     box-sizing: border-box;
-    margin-top: 66px;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-top: 45px;
+
+    border: 1px solid $outline-color-primary;
   }
 
   .profile__contacts-title {
-    margin-top: 9px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -523,6 +563,10 @@
     margin-top: 67px;
   }
 
+  .profile__additionally {
+    width: 1220px;
+  }
+
   .profile__additionally-title {
     margin-top: 67px;
   }
@@ -533,15 +577,18 @@
   }
 
   .profile__submit {
+    width: 1220px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 84px;
   }
 
   .profile__button {
-    margin-top: 11px;
+    margin-top: 20px;
   }
 
   .profile__note {
     margin-left: 23px;
-    margin-top: 28px;
+    margin-top: 37px;
   }
 }
