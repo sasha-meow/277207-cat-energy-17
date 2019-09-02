@@ -40,3 +40,9 @@
     margin-top: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-top: 11px;
+  }
+}

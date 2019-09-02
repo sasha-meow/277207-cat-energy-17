@@ -1,13 +1,42 @@
 .tertiary-title {
+  position: relative;
+  display: inline-block;
+
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $text-color-darkest;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 20px);
+    top: calc(50% - 2px);
+    width: calc(100vw - 30px);
+    height: 3px;
+
+    background-color: $decoration-element-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .tertiary-title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100vw;
+      top: calc(50% - 2px);
+      width: calc(100vw - 39px);
+      height: 3px;
+
+      background-color: $decoration-element-color;
+    }
+
+    &::after {
+      left: calc(100% + 35px);
+    }
   }
 }

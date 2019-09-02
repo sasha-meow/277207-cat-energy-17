@@ -1,9 +1,15 @@
 .example {
-  min-height: 705px;
+  padding-top: 18px;
+  padding-bottom: 37px;
 
   color: $text-color-darkest;
 
   background-color: $background-color-secondary;
+}
+
+.example__information {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -11,30 +17,88 @@
 }
 
 .example__description {
+  width: 266px;
   margin: 0;
+  margin-top: 23px;
 
   font-family: $font-family-secondary;
   color: $text-color-dark;
 }
 
+.example__statistics {
+  width: 280px;
+  margin-top: 22px;
+}
+
+.example__statistics tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__statistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  &--nutrition {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18px;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 .example__statistics-cell {
-  font-size: 24px;
-  line-height: 24px;
+  display: inline-block;
+  box-sizing: border-box;
+
   text-transform: uppercase;
+  text-align: center;
 
   &--indicator {
+    width: 84px;
+    margin-top: -9px;
+
     font-size: 12px;
     line-height: 12px;
     font-family: $font-family-secondary;
     color: $text-color-dark;
     text-transform: lowercase;
+
+    background-color: $background-color-secondary;
+    z-index: 2;
   }
 
-  &--nutrition {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+  &--value {
+    width: 122px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border: 1px solid $outline-color-secondary;
   }
+}
+
+.example__fat-cat {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.example__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin: 0 auto;
+  margin-top: 33px;
 }
 
 .example__before,
@@ -44,28 +108,192 @@
   text-transform: uppercase;
 }
 
+.example__toggle-bar {
+  position: relative;
+
+  width: 82px;
+  height: 12px;
+  margin-left: 10px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: $background-color-primary;
+}
+
+.example__toggle-control {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 35px;
+  height: 6px;
+  border: none;
+  border-radius: 3px;
+  background-color: $decoration-element-color;
+}
+
 @media (min-width: $tablet-width) {
   .example {
-    min-height: 1040px;
+    padding-bottom: 68px;
 
-    background: linear-gradient(to bottom, $background-color-primary 55%, $background-color-secondary 55%, $background-color-secondary 100%);
+    background: linear-gradient(to bottom, $background-color-primary 57%, $background-color-secondary 57%, $background-color-secondary 100%);
+  }
+
+  .example__information {
+    width: 708px;
   }
 
   .example__title {
-    margin-top: 40px;
+    margin-top: 23px;
   }
 
   .example__description {
-    margin-top: 10px;
+    width: 676px;
+    margin-top: 65px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .example__statistics {
+    width: inherit;
+    margin-top: 50px;
+  }
+
+  .example__statistics tbody {
+    justify-content: flex-start;
+  }
+
+  .example__statistics-row {
+    width: auto;
+    margin-right: 43px;
+
+    &--nutrition {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 176px;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 122px;
+
+      font-size: 20px;
+    }
+  }
+
+  .example__statistics-cell {
+    &--indicator {
+      width: auto;
+      margin: 0 auto;
+      margin-top: -9px;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: $background-color-primary;
+    }
+
+    &--value {
+      width: 160px;
+      padding-bottom: 18px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--nutrition {
+      padding-bottom: 8px;
+
+      text-align: right;
+    }
+  }
+
+  .example__fat-cat {
+    width: 690px;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .example__controls {
+    width: 570px;
+    margin-top: 18px;
+  }
+
+  .example__before,
+  .example__after {
+    padding-bottom: 6px;
+
+    font-size: 20px;
+
+    border-bottom: 1px dotted $outline-color-secondary;
+
+    &:hover {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+
+  .example__toggle-bar {
+    width: 428px;
+    height: 6px;
+    margin-left: 0;
+    margin-top: 8px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .example__toggle-control {
+    top: -14px;
+    left: 202px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: $background-color-primary;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $decoration-element-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &:active::before {
+      top: 11px;
+      left: 11px;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background-color: $decoration-element-color;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    min-height: 640px;
+    padding-top: 0;
+    padding-bottom: 66px;
 
     background: linear-gradient(to bottom, $background-color-primary 29%, $background-color-secondary 29%, $background-color-secondary 100%);
   }
@@ -75,6 +303,49 @@
   }
 
   .example__title {
-    margin-top: 25px;
+    margin-top: 55px;
+  }
+
+  .example__description {
+    width: 431px;
+    margin-top: 146px;
+  }
+
+  .example__statistics {
+    width: 431px;
+    margin-top: 66px;
+  }
+
+  .example__statistics tbody {
+    width: inherit;
+  }
+
+  .example__statistics-row {
+    &--nutrition {
+      flex-direction: row;
+      width: auto;
+      margin: 0;
+      margin-top: 53px;
+    }
+  }
+
+  .example__statistics-cell {
+    &--indicator {
+      background-color: $background-color-secondary;
+    }
+
+    &--nutrition:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  .example__fat-cat {
+    margin-top: 0;
+    margin-left: 135px;
+  }
+
+  .example__controls {
+    margin-top: 40px;
+    margin-left: 213px;
   }
 }

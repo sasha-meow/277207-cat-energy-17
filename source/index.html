@@ -8,30 +8,30 @@
   </head>
   <body>
     <header class="page-header page-header--main">
-        <div class="page-header__navigation-wrapper container">
-          <a class="page-header__logo logo">
-            <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип Cat Energy">
-          </a>
-          <!-- main-nav--opened — меню открыто по умолчанию, иконка переключателя — крестик; main-nav--closed — меню закрыто по умолчанию, иконка переключателя — бургер; main-nav--no-js — меню открыто по умолчанию; main-nav__toggle--show — показывает переключатель, который по умолчанию скрыт, пока не работает JS -->
-          <nav class="main-nav main-nav--opened main-nav--no-js">
-            <button class="main-nav__toggle" type="button" aria-label="Развернуть меню"></button>
-            <ul class="main-nav__list site-list site-list--main">
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a href="program.html" class="site-list__link">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <h1 class="page-header__title primary-title primary-title--main container">Функциональное<br> питание для котов</h1>
-        <div class="promo container">
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <a href="program.html" class="promo__button button button--large">Подобрать программу</a>
+      <div class="page-header__navigation-wrapper container">
+        <a class="page-header__logo logo">
+          <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип Cat Energy">
+        </a>
+        <!-- main-nav--opened — меню открыто по умолчанию, иконка переключателя — крестик; main-nav--closed — меню закрыто по умолчанию, иконка переключателя — бургер; main-nav--no-js — меню открыто по умолчанию; main-nav__toggle--show — показывает переключатель, который по умолчанию скрыт, пока не работает JS -->
+        <nav class="main-nav main-nav--opened main-nav--no-js">
+          <button class="main-nav__toggle" type="button" aria-label="Развернуть меню"></button>
+          <ul class="main-nav__list site-list site-list--main">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="program.html" class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title primary-title primary-title--main container"><span class="page-header__title-add">Функциональное питание для котов</span></h1>
+      <div class="promo container">
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <a href="program.html" class="promo__button button button--large">Подобрать программу</a>
       </div>
     </header>
 
@@ -68,27 +68,33 @@
             <h2 class="example__title secondary-title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <table class="example__statistics">
-              <tr>
+              <tr class="example__statistics-row">
                 <td class="example__statistics-cell example__statistics-cell--indicator">Снижение веса</td>
-                <td class="example__statistics-cell">5 кг</td>
+                <td class="example__statistics-cell example__statistics-cell--value">5 кг</td>
               </tr>
-              <tr>
+              <tr class="example__statistics-row">
                 <td class="example__statistics-cell example__statistics-cell--indicator">Затрачено времени</td>
-                <td class="example__statistics-cell">60 дней</td>
+                <td class="example__statistics-cell example__statistics-cell--value">60 дней</td>
               </tr>
-              <tr>
+              <tr class="example__statistics-row example__statistics-row--nutrition">
                 <td class="example__statistics-cell example__statistics-cell--nutrition">Затраты на питание:</td>
                 <td class="example__statistics-cell example__statistics-cell--nutrition">15 000 руб.</td>
               </tr>
             </table>
           </div>
           <div class="example__cat-slider">
-            <img src="img/before-mobile@1x.png" class="example__fat-cat" width="" height="" alt="Кот до">
-            <!-- <img src="img/after-mobile@1x.png" class="example__thin-cat" width="" height="" alt="Кот после"> -->
-            <span class="example__before">Было</span>
-            <div class="example__toggle-bar"></div>
-            <div class="example__toggle-control"></div>
-            <span class="example__after">Стало</span>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img src="img/before-mobile@1x.png" class="example__fat-cat" width="320" height="240" alt="Кот до">
+            </picture>
+            <div class="example__controls">
+              <span class="example__before">Было</span>
+              <div class="example__toggle-bar">
+                <button class="example__toggle-control"></button>
+              </div>
+              <span class="example__after">Стало</span>
+            </div>
           </div>
         </div>
       </section>
@@ -96,10 +102,12 @@
       <section class="location location--main">
         <div class="location__address-wrapper container">
           <h2 class="visually-hidden">Местоположение Cat Energy</h2>
-          <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></address>
         </div>
-        <div class="location__map"></div>
+        <div class="location__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566658276230!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
       </section>
     </main>
 
