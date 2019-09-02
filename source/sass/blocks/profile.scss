@@ -440,15 +440,16 @@
   }
 
   .profile__contacts .profile__input-group {
+    min-width: 630px;
     margin-top: 7px;
 
-    &::first-child {
+    &:first-child {
       margin-top: 0;
     }
   }
 
   .profile__contacts .profile__label {
-    max-width: 100px;
+    max-width: 200px;
   }
 
   .profile__contacts .profile__label--email {
