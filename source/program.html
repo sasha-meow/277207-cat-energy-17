@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HTML Academy: Кэт энерджи. Программа</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="preload" href="/fonts/oswaldmedium.woff2">
@@ -39,29 +39,31 @@
     </header>
 
     <main class="page-main">
-      <div class="container">
-        <h1 class="page-main__title primary-title">Подбор программы</h1>
-        <section class="profile">
+      <h1 class="page-main__title primary-title container">Подбор программы</h1>
+      <section class="profile">
+        <div class="container">
           <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="profile__flex-wrapper">
-              <fieldset class="profile__group-wrapper">
-                <div class="profile__main">
-                  <div class="profile__input-group">
-                    <label class="profile__label" for="user-name">Имя:<span aria-label="Обязательное поле">*</span></label>
-                    <input class="profile__entry-field" id="user-name" type="text" name="user-name" placeholder="Барсик" required>
-                  </div>
-                  <div class="profile__input-group">
-                    <label class="profile__label profile__label--weight" for="weight">Вес (кг):<span aria-label="Обязательное поле">*</span></label>
-                    <input class="profile__entry-field" id="weight" type="number" name="weight" placeholder="7" required>
-                  </div>
-                  <div class="profile__input-group">
-                    <label class="profile__label" for="age">Возраст (лет):</label>
-                    <input class="profile__entry-field" id="age" type="number" name="age" placeholder="7">
-                  </div>
+        </div>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="profile__flex-wrapper">
+            <div class="profile__group-wrapper container">
+              <div class="profile__main">
+                <div class="profile__input-group">
+                  <label class="profile__label" for="user-name">Имя:<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="user-name" type="text" name="user-name" placeholder="Барсик" required>
                 </div>
-              </fieldset>
-              <fieldset class="profile__group-wrapper--bordered">
+                <div class="profile__input-group">
+                  <label class="profile__label profile__label--weight" for="weight">Вес (кг):<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="weight" type="number" name="weight" placeholder="7" required>
+                </div>
+                <div class="profile__input-group">
+                  <label class="profile__label" for="age">Возраст (лет):</label>
+                  <input class="profile__entry-field" id="age" type="number" name="age" placeholder="7">
+                </div>
+              </div>
+            </div>
+            <div class="profile__group-wrapper--bordered">
+              <div class="container">
                 <div class="profile__purpose">
                   <div class="profile__input-group">
                     <input class="profile__radio-button visually-hidden" id="weight-loss" type="radio" name="purpose" value="weight-loss" checked>
@@ -76,67 +78,73 @@
                     <label class="profile__label profile__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </div>
-            <fieldset class="profile__group-wrapper">
-              <div class="profile__contacts">
-                <legend class="profile__contacts-title tertiary-title">Контактные данные (владельца кота)</legend>
-                <div class="profile__contacts-wrapper">
-                  <div class="profile__input-group">
-                    <label class="profile__label profile__label--email" for="email">E-mail:<span aria-label="Обязательное поле">*</span></label>
-                    <input class="profile__entry-field" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                    <button class="profile__contacts-button" type="button" aria-label="Адрес электронной почты">
-                      <svg class="profile__contacts-icon" width="18" height="14" fill="#222222"><use xlink:href="#icon-mail"></use></svg>
-                    </button>
-                  </div>
-                  <div class="profile__input-group">
-                    <label class="profile__label profile__label--phone" for="phone">Телефон:<span aria-label="Обязательное поле">*</span></label>
-                    <input class="profile__entry-field" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                    <button class="profile__contacts-button" type="button" aria-label="Номер телефона">
-                      <svg class="profile__contacts-icon" width="21" height="21" fill="#222222"><use xlink:href="#icon-phone"></use></svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="profile__group-wrapper">
-              <div class="profile__comment">
-                <legend class="profile__comment-title tertiary-title">Комментарий</legend>
+          </div>
+          <div class="profile__contacts-title tertiary-title tertiary-title--contacts">
+            <h2 class="tertiary-title__content container"><span class="tertiary-title__text">Контактные данные (владельца кота)</span></h2>
+          </div>
+          <div class="profile__group-wrapper container">
+            <div class="profile__contacts">
+              <div class="profile__contacts-wrapper">
                 <div class="profile__input-group">
-                  <textarea class="profile__entry-field profile__entry-field--textarea" name="about" rows="5" cols="7">Расскажите обо всех повадках кота</textarea>
+                  <label class="profile__label profile__label--email" for="email">E-mail:<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <button class="profile__contacts-button" type="button" aria-label="Адрес электронной почты">
+                    <svg class="profile__contacts-icon" width="18" height="14" fill="#222222"><use xlink:href="#icon-mail"></use></svg>
+                  </button>
+                </div>
+                <div class="profile__input-group">
+                  <label class="profile__label profile__label--phone" for="phone">Телефон:<span aria-label="Обязательное поле">*</span></label>
+                  <input class="profile__entry-field" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <button class="profile__contacts-button" type="button" aria-label="Номер телефона">
+                    <svg class="profile__contacts-icon" width="21" height="21" fill="#222222"><use xlink:href="#icon-phone"></use></svg>
+                  </button>
                 </div>
               </div>
-            </fieldset>
-            <fieldset class="profile__group-wrapper">
-              <div class="profile__additionally">
-                <legend class="profile__additionally-title tertiary-title">Дополнительно</legend>
-                <div class="profile__additionally-wrapper">
-                  <div class="profile__input-group">
-                    <input class="profile__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-                    <label class="profile__label profile__label--checkbox" for="sweetener">Сахарозаменитель</label>
-                  </div>
-                  <div class="profile__input-group">
-                    <input class="profile__checkbox visually-hidden" id="water" type="checkbox" name="water">
-                    <label class="profile__label profile__label--checkbox" for="water">Питьевая вода</label>
-                  </div>
-                  <div class="profile__input-group">
-                    <input class="profile__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
-                    <label class="profile__label profile__label--checkbox" for="milk">Молоко</label>
-                  </div>
-                  <div class="profile__input-group">
-                    <input class="profile__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-                    <label class="profile__label profile__label--checkbox" for="vitamins">Витамины</label>
-                  </div>
+            </div>
+          </div>
+          <div class="profile__comment-title tertiary-title">
+            <h2 class="tertiary-title__content container"><span class="tertiary-title__text">Комментарий</span></h2>
+          </div>
+          <div class="profile__group-wrapper container">
+            <div class="profile__comment">
+              <div class="profile__input-group">
+                <textarea class="profile__entry-field profile__entry-field--textarea" name="about" rows="5" cols="7">Расскажите обо всех повадках кота</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="profile__additionally-title tertiary-title">
+            <h2 class="tertiary-title__content container"><span class="tertiary-title__text">Дополнительно</span></h2>
+          </div>
+          <div class="profile__group-wrapper container">
+            <div class="profile__additionally">
+              <div class="profile__additionally-wrapper">
+                <div class="profile__input-group">
+                  <input class="profile__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+                  <label class="profile__label profile__label--checkbox" for="sweetener">Сахарозаменитель</label>
+                </div>
+                <div class="profile__input-group">
+                  <input class="profile__checkbox visually-hidden" id="water" type="checkbox" name="water">
+                  <label class="profile__label profile__label--checkbox" for="water">Питьевая вода</label>
+                </div>
+                <div class="profile__input-group">
+                  <input class="profile__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                  <label class="profile__label profile__label--checkbox" for="milk">Молоко</label>
+                </div>
+                <div class="profile__input-group">
+                  <input class="profile__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                  <label class="profile__label profile__label--checkbox" for="vitamins">Витамины</label>
                 </div>
               </div>
-            </fieldset>
-            <p class="profile__submit">
-              <button class="profile__button button button--largest" type="submit">Отправить заявку</button>
-              <span class="profile__note"><span aria-label="Обязательное поле">*</span> — Обязательные поля</span>
-            </p>
-          </form>
-        </section>
-      </div>
+            </div>
+          </div>
+          <p class="profile__submit">
+            <button class="profile__button button button--largest" type="submit">Отправить заявку</button>
+            <span class="profile__note"><span aria-label="Обязательное поле">*</span> — Обязательные поля</span>
+          </p>
+        </form>
+      </section>
 
       <section class="location location">
         <div class="location__address-wrapper container">
