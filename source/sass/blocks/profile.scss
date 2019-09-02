@@ -12,6 +12,7 @@
 
   color: $text-color-darkest;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .profile .profile__group-wrapper {
@@ -100,13 +101,13 @@
   }
 }
 
-.profile__label{
+.profile__label {
   padding-right: 16px;
 
   font-size: 16px;
   color: $text-color-darker;
   text-transform: uppercase;
-  white-space: nowrap;
+  word-break: break-word;
 
   &--radio {
     padding-left: 45px;
@@ -209,6 +210,8 @@
   margin-top: 11px;
   margin-bottom: 21px;
   padding-top: 16px;
+
+  word-break: break-word;
 }
 
 .profile__contacts .profile__input-group {
@@ -219,12 +222,13 @@
 }
 
 .profile__contacts .profile__label {
+  max-width: 80px;
   padding-right: 12px;
 }
 
 .profile__contacts-button {
   position: absolute;
-  top: 27px;
+  top: calc(50% - 3px);
   right: 12px;
 
   width: 22px;
@@ -249,6 +253,8 @@
   margin-top: 28px;
   margin-bottom: 30px;
   padding-bottom: 5px;
+
+  word-break: break-word;
 }
 
 .profile__additionally {
@@ -260,6 +266,8 @@
   margin-top: 28px;
   margin-bottom: 23px;
   padding-bottom: 5px;
+
+  word-break: break-word;
 }
 
 .profile__additionally .profile__input-group {
@@ -337,7 +345,8 @@
   }
 
   .profile__input-group {
-    max-width: 630px;
+    width: 570px;
+    max-width: 570px;
   }
 
   .profile__entry-field {
@@ -364,6 +373,7 @@
   }
 
   .profile__label {
+    width: auto;
     font-size: 20px;
     line-height: 20px;
 
@@ -437,12 +447,15 @@
     }
   }
 
+  .profile__contacts .profile__label {
+    max-width: 100px;
+  }
+
   .profile__contacts .profile__label--email {
     padding-right: 20px;
   }
 
   .profile__contacts-button {
-    top: 31px;
     right: 15px;
   }
 
@@ -521,6 +534,11 @@
     }
   }
 
+  .profile__input-group {
+    width: 500px;
+    max-width: 500px;
+  }
+
   .profile__entry-field {
     padding-top: 10px;
     padding-bottom: 12px;
@@ -559,6 +577,9 @@
 
   .profile__contacts-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
     padding-top: 38px;
   }
 
@@ -582,6 +603,10 @@
     width: 1220px;
   }
 
+  .profile__additionally-wrapper {
+    justify-content: flex-start;
+  }
+
   .profile__additionally-title {
     margin-top: 66px;
   }
@@ -589,6 +614,12 @@
   .profile__additionally .profile__input-group {
     width: 200px;
     min-width: 200px;
+
+    margin-right: 78px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .profile__submit {
