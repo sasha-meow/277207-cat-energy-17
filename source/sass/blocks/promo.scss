@@ -41,7 +41,7 @@
   margin: 0 auto;
   padding-top: 28px;
 
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .promo__slogan {
@@ -51,7 +51,7 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .promo__button {

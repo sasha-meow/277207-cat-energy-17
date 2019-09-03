@@ -15,7 +15,7 @@
 .example__title {
   margin: 0;
 
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .example__description {
@@ -63,7 +63,7 @@
 
   text-transform: uppercase;
   text-align: center;
-  word-break: break-word;
+  word-break: break-all;
 
   &--indicator {
     width: 84px;

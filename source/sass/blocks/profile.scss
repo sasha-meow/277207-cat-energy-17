@@ -12,7 +12,7 @@
 
   color: $text-color-darkest;
   text-transform: uppercase;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .profile .profile__group-wrapper {
@@ -91,7 +91,7 @@
   font-size: 16px;
   color: $text-color-darker;
   text-transform: uppercase;
-  word-break: break-word;
+  word-break: break-all;
 
   &--radio {
     padding-left: 45px;

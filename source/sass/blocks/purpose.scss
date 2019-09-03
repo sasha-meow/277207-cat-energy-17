@@ -36,7 +36,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  word-wrap: break-word;
+  word-break: break-all;
 
   &::before {
     content: "";
@@ -93,7 +93,7 @@
 
   font-family: $font-family-secondary;
   color: $text-color-dark;
-  word-wrap: break-word;
+  word-break: break-all;
 
   border-bottom: 1px solid $outline-color-secondary;
 }
@@ -111,7 +111,7 @@
   color: $text-color-darkest;
   text-transform: uppercase;
   text-decoration: none;
-  word-wrap: break-word;
+  word-break: break-all;
   vertical-align: middle;
 
   background-image: url("../img/right-arrow-long-icon.svg");
