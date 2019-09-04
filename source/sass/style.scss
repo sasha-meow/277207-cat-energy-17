@@ -1,6 +1,7 @@
 @import "../css/normalize.css";
 @import "utils/fonts.scss";
 @import "utils/variables.scss";
+@import "blocks/general.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/button.scss";
 @import "blocks/container.scss";
@@ -23,27 +24,3 @@
 @import "blocks/tertiary-title.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/work-process.scss";
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-width: 320px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $font-family-primary;
-  color: $text-color-darkest;
-
-  background-color: $background-color-primary;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
