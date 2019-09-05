@@ -41,7 +41,6 @@
   line-height: 14px;
   font-family: $font-family-secondary;
   color: $text-color-dark;
-  word-break: break-all;
 
   &--name {
     width: 100%;
@@ -116,7 +115,6 @@
   font-family: $font-family-secondary;
   color: $text-color-light;
   text-align: center;
-  word-break: break-all;
 }
 
 @media (min-width: $tablet-width) {
