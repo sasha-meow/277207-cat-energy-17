@@ -40,9 +40,11 @@
 .profile__entry-field {
   flex-grow: 1;
   min-width: 150px;
+  height: 45px;
   padding-top: 15px;
   padding-bottom: 13px;
   padding-left: 14px;
+  box-sizing: border-box;
 
   font-size: 16px;
   font-family: $font-family-primary;
@@ -53,6 +55,7 @@
   box-shadow: inset 0 0 0 1px $outline-color-secondary;
 
   &--textarea {
+    width: 280px;
     min-height: 150px;
     padding: 12px 5px 10px 15px;
     box-sizing: border-box;
@@ -85,7 +88,7 @@
 }
 
 .profile__label {
-  padding-right: 16px;
+  padding-right: 15px;
 
   font-size: 16px;
   color: $text-color-darker;
@@ -140,6 +143,10 @@
       box-shadow: inset 0 0 0 1px $outline-color-tertiary;
     }
   }
+
+  &--age {
+    min-width: 94px;
+  }
 }
 
 .profile__main {
@@ -149,7 +156,7 @@
 
 .profile__main .profile__input-group {
   justify-content: space-between;
-  margin-top: 13px;
+  margin-top: 14px;
 }
 
 .profile__purpose {
@@ -176,7 +183,9 @@
 }
 
 .profile__radio-button:focus ~ .profile__label--radio,
-.profile__radio-button:focus ~ .profile__label--radio::after {
+.profile__radio-button:focus ~ .profile__label--radio::after,
+.profile__radio-button:active ~ .profile__label--radio,
+.profile__radio-button:active ~ .profile__label--radio::after {
   opacity: 0.3;
 }
 
@@ -260,7 +269,9 @@
 }
 
 .profile__checkbox:focus ~ .profile__label--checkbox,
-.profile__checkbox:focus ~ .profile__label--checkbox::before {
+.profile__checkbox:focus ~ .profile__label--checkbox::before,
+.profile__checkbox:active ~ .profile__label--checkbox,
+.profile__checkbox:active ~ .profile__label--checkbox::before {
   opacity: 0.3;
 }
 
@@ -322,8 +333,8 @@
   }
 
   .profile__entry-field {
-    min-height: 52px;
-    padding-top: 11px;
+    height: 52px;
+    padding-top: 14px;
     padding-bottom: 13px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -332,6 +343,7 @@
     line-height: 20px;
 
     &--textarea {
+      width: 631px;
       min-height: 174px;
       padding-top: 16px;
       padding-left: 19px;
@@ -384,14 +396,14 @@
 
   .profile__main {
     max-width: 708px;
-    margin-top: 33px;
+    margin-top: 35px;
     margin-bottom: 24px;
     padding-bottom: 47px;
     padding-left: 40px;
   }
 
   .profile__main .profile__input-group {
-    margin-top: 19px;
+    margin-top: 20px;
   }
 
   .profile__purpose {
@@ -410,7 +422,7 @@
 
   .profile__contacts-title {
     margin-top: 69px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     padding-top: 0;
     padding-bottom: 10px;
   }
@@ -433,7 +445,7 @@
   }
 
   .profile__contacts-button {
-    right: 15px;
+    right: 17px;
   }
 
   .profile__comment {
@@ -441,24 +453,21 @@
   }
 
   .profile__comment-title {
-    margin-top: 57px;
+    margin-top: 60px;
     margin-bottom: 60px;
   }
 
   .profile__additionally {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
   }
 
   .profile__additionally-title {
-    margin-top: 60px;
+    margin-top: 57px;
     margin-bottom: 29px;
-  }
-
-  .profile__additionally-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .profile__additionally .profile__input-group {
@@ -527,7 +536,7 @@
   }
 
   .profile__entry-field {
-    padding-top: 10px;
+    padding-top: 14px;
     padding-bottom: 12px;
 
     &--textarea {
@@ -564,20 +573,17 @@
   }
 
   .profile__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+    padding-top: 17px;
     padding-left: 0;
   }
 
   .profile__contacts-title {
     margin-top: 0;
     margin-bottom: 9px;
-  }
-
-  .profile__contacts-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1220px;
-    padding-top: 17px;
   }
 
   .profile__contacts .profile__input-group {
@@ -587,10 +593,6 @@
     &:first-child {
       margin-right: 81px;
     }
-  }
-
-  .profile__contacts .profile__label--phone {
-    padding-right: 16px;
   }
 
   .profile__comment {
@@ -603,18 +605,15 @@
   }
 
   .profile__additionally {
+    justify-content: flex-start;
     width: 1220px;
     padding-left: 0;
     padding-right: 0;
   }
 
-  .profile__additionally-wrapper {
-    justify-content: flex-start;
-  }
-
   .profile__additionally-title {
     margin-top: 52px;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .profile__additionally .profile__input-group {
